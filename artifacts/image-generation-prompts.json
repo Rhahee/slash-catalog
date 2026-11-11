@@ -1,0 +1,34 @@
+{
+  "tool": "built-in image_gen",
+  "inputImages": [],
+  "note": "Independently generated examples of a fictional unbranded blue mug. These are illustrations of full prompt concepts, not evidence that shorthand codes alone invoke built-in ChatGPT commands.",
+  "prompts": [
+    {
+      "id": "storybook",
+      "generatedAt": "2026-11-11",
+      "sourceFile": "C:/Users/rahen/.codex/generated_images/01a1c7c1-f42e-7403-aafd-0349039870ba/exec-ce0722ee-60ae-40b7-9b80-a6aed9266499.png",
+      "outputFile": "assets/examples/storybook.png",
+      "prompt": "Create one square standalone children's picture-book illustration, no border, no collage, no captions, no lettering, no logos, no watermark. A fictional unbranded cobalt-blue matte ceramic mug with a cylindrical body and a D-shaped handle is repurposed as a planter in a little garden. A friendly small brown rabbit wearing a simple ochre apron gently waters a tiny green seedling growing from soil inside the blue mug, using a small cream watering can. Make the entire mug and handle visible and the rabbit's action easy to understand. Hand-painted gouache and watercolor on textured ivory paper, soft rounded shapes, expressive gentle character, warm morning light, restrained terracotta, moss green and cream palette with the blue mug as focal accent, a few small flowers and a wooden garden fence softly suggested in the background. Eye-level scene, readable uncluttered composition, warm storytelling mood. This is an independently generated fictional example for a community image-prompt catalog, not an existing book, character, product advertisement or a photo."
+    },
+    {
+      "id": "metaads",
+      "prompt": "Create one square image, no border, no collage, no captions, no watermark. The subject is a fictional unbranded cobalt blue matte ceramic mug with a simple cylindrical body and a D-shaped handle, no logo, no lettering. This is an independently generated illustration for a community prompt catalog, not a real brand campaign. Produce a social-media product advertisement photograph. Mug slightly below center occupying 50 percent of frame; warm cream studio surface and background with a muted blue paper arc off to the side. Soft directional daylight from upper left, realistic contact shadow, subtle visible coffee inside. Leave generous empty space in the upper quarter for later ad copy but do not render any text. Clean, believable product photography, restrained props."
+    },
+    {
+      "id": "3dbillboard",
+      "prompt": "Create one square image, no border, no collage, no captions, no watermark. The subject is a fictional unbranded cobalt blue matte ceramic mug with a simple cylindrical body and a D-shaped handle, no logo, no lettering. This is an independently generated illustration for a community prompt catalog, not a real brand campaign. Produce a cinematic photorealistic 3D anamorphic billboard advertisement at dusk in a modern city street. A large curved corner LED billboard on a building displays this giant blue mug, and the mug handle appears to project out of the screen toward the street. Wet street reflections and a few tiny pedestrians establish scale. Convincing architecture and perspective; mug is the central hero, urban colors blue and warm amber, no readable signage anywhere. This is a fictional impossible-perspective ad concept."
+    },
+    {
+      "id": "showcase",
+      "prompt": "Create one square image, no border, no collage, no captions, no watermark. The subject is a fictional unbranded cobalt blue matte ceramic mug with a simple cylindrical body and a D-shaped handle, no logo, no lettering. This is an independently generated illustration for a community prompt catalog, not a real brand campaign. Produce a straightforward high-end e-commerce studio product photograph: entire mug and handle in frame, three-quarter camera angle at mug height, mug centered on a very light neutral grey seamless backdrop. Precise material texture and soft contact shadow. Broad softbox lighting, no props, no floating elements, no dramatic splash. Simple true-to-life catalog shot, product fills 65 percent of square frame."
+    },
+    {
+      "id": "ugcmodel",
+      "prompt": "Create one square image, no border, no collage, no captions, no watermark. The subject is a fictional unbranded cobalt blue matte ceramic mug with a simple cylindrical body and a D-shaped handle, no logo, no lettering. This is an independently generated illustration for a community prompt catalog, not a real brand campaign. Produce a natural candid smartphone-style lifestyle photo of a fictional adult woman about 30 wearing a simple cream linen shirt, seated in a lived-in bright kitchen at breakfast. She holds the blue mug naturally at chest height in both hands, mug and face in clear view, anatomically correct hands, gentle friendly expression not exaggerated. Window daylight, slightly imperfect framing, quiet domestic background, realistic skin texture, no beauty-filter look. No testimonial words, no claims or logos. The person is fictional."
+    },
+    {
+      "id": "miniature",
+      "prompt": "Create one square image, no border, no collage, no captions, no watermark. The subject is a fictional unbranded cobalt blue matte ceramic mug with a simple cylindrical body and a D-shaped handle, no logo, no lettering. This is an independently generated illustration for a community prompt catalog, not a real brand campaign. Produce a macro photograph of a handcrafted miniature diorama of a tiny coffee stand inside a cobalt-blue mug-shaped kiosk. The kiosk resembles this mug with a prominent D-shaped handle on its right side. A miniature wooden counter and three tiny figures gather near the opening, paper plants and tiny coffee bags in the scene. Place the complete diorama on a small wooden rectangular base on a neutral table. Warm practical lights, painted wood and paper craft textures, elevated three-quarter camera angle, shallow tilt-shift focus with detailed central scene, no readable text."
+    }
+  ]
+}

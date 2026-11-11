@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Katalog shorthand prompt khusus image generator ChatGPT, lengkap dengan prompt Indonesia dan Inggris, referensi komunitas, serta contoh gambar.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Slash Catalog — Prompt Gambar ChatGPT</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body data-catalog-source="./data/catalog.json">
+  <a class="skip-link" href="#main" data-i18n="skip">Lewati ke konten</a>
+  <header class="site-header">
+    <a class="brand" href="#catalog" aria-label="Slash Catalog"><span class="brand-mark" aria-hidden="true">/</span>Slash Catalog</a>
+    <nav class="header-nav" aria-label="Navigasi utama" data-i18n-aria="navigation">
+      <a href="#guide" data-i18n="guide">Panduan</a>
+      <a href="#sources" data-i18n="sources">Sumber</a>
+      <div class="language-switch" role="group" aria-label="Bahasa / Language">
+        <button type="button" data-language="id" lang="id" aria-label="Bahasa Indonesia" aria-pressed="true">ID</button>
+        <button type="button" data-language="en" lang="en" aria-label="English" aria-pressed="false">EN</button>
+      </div>
+    </nav>
+  </header>
+  <main id="main" tabindex="-1">
+    <div class="page-intro">
+      <h1 data-i18n="pageHeading">Prompt gambar untuk ChatGPT</h1>
+      <p data-i18n="pageDescription">Pilih shorthand berdasarkan gaya gambar yang ingin dibuat. Setiap entri berisi prompt lengkap dan contoh visual.</p>
+      <p class="shorthand-note" data-i18n="shorthandNote">Kode seperti /metaads adalah singkatan prompt komunitas, bukan command resmi. Tombol salin menyalin instruksi lengkapnya.</p>
+    </div>
+    <section id="catalog" aria-label="Katalog prompt gambar" data-i18n-aria="catalog">
+      <label for="search" class="search-label" data-i18n="searchLabel">Cari kode atau gaya gambar</label>
+      <div class="search-bar">
+        <input id="search" type="search" autocomplete="off" aria-describedby="search-hint" placeholder="Misalnya /metaads, foto produk, atau miniatur" data-i18n-placeholder="searchPlaceholder">
+        <button type="button" id="clear-search" class="text-button" hidden data-i18n="clear">Hapus</button>
+      </div>
+      <p id="search-hint" class="field-hint" hidden data-i18n="searchUnavailable">Pencarian tersedia setelah ada entri.</p>
+      <div id="filters" class="filters" role="group" aria-label="Filter kategori" data-i18n-aria="filterCategories" hidden></div>
+      <p id="result-count" class="results-meta" role="status" aria-live="polite"></p>
+      <div id="load-error" class="notice" role="alert" hidden>
+        <h2 data-i18n="loadErrorTitle">Katalog belum dapat dimuat</h2>
+        <p data-i18n="loadError">Periksa koneksi ke server lokal, lalu coba lagi.</p>
+        <button type="button" id="retry" class="button secondary" data-i18n="retry">Coba lagi</button>
+      </div>
+      <div id="entry-grid" class="entry-grid"></div>
+      <div id="empty-state" class="empty-state" hidden>
+        <h2 id="empty-title"></h2>
+        <p id="empty-description"></p>
+        <a id="verification-link" href="#sources" data-i18n="viewSources">Lihat catatan verifikasi</a>
+        <button type="button" id="reset-filters" class="button secondary" hidden data-i18n="resetFilters">Reset pencarian & filter</button>
+      </div>
+    </section>
+    <section id="guide" class="guide-section" aria-labelledby="guide-heading">
+      <h2 id="guide-heading" data-i18n="guideHeading">Cara menggunakan katalog</h2>
+      <ol class="guide-steps">
+        <li><strong data-i18n="stepOneTitle">Pilih gaya gambar.</strong> <span data-i18n="stepOne">Bandingkan contoh visual dan baca tujuan setiap shorthand.</span></li>
+        <li><strong data-i18n="stepTwoTitle">Salin prompt lengkap.</strong> <span data-i18n="stepTwo">Buka detail dan salin instruksinya. Kode pendek saja tidak memiliki perilaku bawaan yang terjamin.</span></li>
+        <li><strong data-i18n="stepThreeTitle">Sesuaikan di ChatGPT Images.</strong> <span data-i18n="stepThree">Ganti detail produk sesuai kebutuhan. Lampirkan foto jika ada, lalu kirim prompt untuk membuat gambar.</span></li>
+      </ol>
+      <p class="guide-footnote" data-i18n="guideNote">Contoh memakai cangkir biru fiktif tanpa merek. Hasil dapat berbeda saat prompt dijalankan ulang.</p>
+    </section>
+    <section id="sources" class="sources-section" aria-labelledby="sources-heading">
+      <h2 id="sources-heading" data-i18n="sourceHeading">Referensi dan contoh visual</h2>
+      <p id="verification-status" class="verification-status"></p>
+      <p id="research-note"></p>
+      <div id="source-list"></div>
+      <p class="last-reviewed" id="last-reviewed"></p>
+      <details>
+        <summary data-i18n="methodTitle">Kriteria penerbitan entri</summary>
+        <p data-i18n="method">Sumber menunjukkan penggunaan nama kode, bukan dukungan command resmi. Prompt lengkap dan contoh visual disediakan untuk setiap entri.</p>
+      </details>
+    </section>
+    <footer>
+      <p data-i18n="independent">Proyek independen. Tidak berafiliasi dengan OpenAI.</p>
+      <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer" data-i18n="openChatGPT">Buka ChatGPT</a>
+    </footer>
+  </main>
+  <dialog id="entry-dialog" aria-labelledby="detail-title">
+    <div class="dialog-toolbar">
+      <span data-i18n="commandDetail">Prompt gambar</span>
+      <div class="dialog-actions">
+        <div class="language-switch" role="group" aria-label="Bahasa / Language">
+          <button type="button" data-language="id" lang="id" aria-label="Bahasa Indonesia" aria-pressed="true">ID</button>
+          <button type="button" data-language="en" lang="en" aria-label="English" aria-pressed="false">EN</button>
+        </div>
+        <button type="button" id="close-detail" class="text-button" data-i18n="closeDetail">Tutup detail</button>
+      </div>
+    </div>
+    <div id="detail-content"></div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </dialog>
+  <noscript><p class="notice">Aktifkan JavaScript untuk membuka katalog. / Enable JavaScript to view the catalog.</p></noscript>
+</body>
+</html>

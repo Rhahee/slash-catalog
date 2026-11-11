@@ -1,0 +1,11 @@
+{
+  "name": "slash-command-catalog",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test tests/catalog.test.mjs",
+    "test:preview": "node scripts/serve.mjs --test --port 4174"
+  }
+}

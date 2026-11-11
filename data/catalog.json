@@ -1,0 +1,228 @@
+{
+  "version": 2,
+  "scope": "image-prompts",
+  "reviewedAt": "2026-11-11",
+  "status": "ready",
+  "researchNote": {
+    "id": "Katalog ini memuat shorthand prompt khusus pembuatan gambar. Nama kode ditemukan pada referensi komunitas Wishyani, bukan daftar command resmi OpenAI. Prompt lengkap ditulis untuk katalog ini. Contoh visual dibuat dengan Imagegen dari deskripsi cangkir biru fiktif tanpa foto masukan; contoh tersebut tidak membuktikan bahwa kode pendek saja menghasilkan gambar tertentu.",
+    "en": "This catalog contains image-generation prompt shorthands. Their code names were found in the Wishyani community reference, not an official OpenAI command list. Full prompts were written for this catalog. Visual examples were created with Imagegen from descriptions of a fictional blue mug, without input photos; they do not establish that short codes alone produce a particular image."
+  },
+  "sources": [
+    {"url": "https://www.wishyani.com/commands/metaads", "title": "Wishyani — /metaads", "note": {"id": "Referensi penggunaan nama kode untuk visual iklan produk.", "en": "Reference for the code name used for product ad imagery."}},
+    {"url": "https://www.wishyani.com/commands/3dbillboard", "title": "Wishyani — /3dbillboard", "note": {"id": "Referensi nama kode untuk konsep billboard anamorfik.", "en": "Reference for the anamorphic billboard concept code."}},
+    {"url": "https://www.wishyani.com/commands/showcase", "title": "Wishyani — /showcase", "note": {"id": "Referensi nama kode untuk foto produk studio.", "en": "Reference for the studio product photography code."}},
+    {"url": "https://www.wishyani.com/commands/ugcmodel", "title": "Wishyani — /ugcmodel", "note": {"id": "Referensi nama kode untuk visual produk bersama model.", "en": "Reference for the lifestyle product-and-model code."}},
+    {"url": "https://www.wishyani.com/commands/miniature", "title": "Wishyani — /miniature", "note": {"id": "Referensi nama kode untuk gaya diorama miniatur.", "en": "Reference for the miniature diorama style code."}},
+    {"url": "https://www.wishyani.com/commands/storybook", "title": "Wishyani — /storybook", "note": {"id": "Referensi nama kode untuk ilustrasi buku cerita anak.", "en": "Reference for the children's picture-book illustration code."}}
+  ],
+  "categories": [
+    {"id": "advertising", "label": {"id": "Iklan", "en": "Advertising"}},
+    {"id": "product-photo", "label": {"id": "Foto produk", "en": "Product photography"}},
+    {"id": "miniature", "label": {"id": "Miniatur", "en": "Miniature"}},
+    {"id": "illustration", "label": {"id": "Ilustrasi", "en": "Illustration"}}
+  ],
+  "entries": [
+    {
+      "id": "metaads", "name": "/metaads", "type": "community-shorthand", "platform": "chatgpt-images", "category": "advertising",
+      "access": {"kind": "shorthand", "label": {"id": "Shorthand komunitas. Gunakan prompt lengkap di bawah untuk memberi instruksi yang jelas.", "en": "Community shorthand. Use the full prompt below to give clear instructions."}},
+      "keywords": {"id": "iklan produk sosial media instagram facebook promosi ruang teks", "en": "product advertising social media instagram facebook promotion copy space"},
+      "example": {
+        "image": "/assets/examples/metaads.png",
+        "alt": {"id": "Cangkir biru berisi kopi di atas bidang krem dengan ruang kosong di bagian atas dan elemen lengkung biru.", "en": "A blue coffee mug on a cream surface with empty space above and a blue curved backdrop element."},
+        "note": {"id": "Ilustrasi AI dibuat dengan Imagegen dari deskripsi produk fiktif. Tidak memakai foto produk masukan atau kode /metaads saja.", "en": "AI illustration created with Imagegen from a fictional product description. No input product photo or standalone /metaads code was used."}
+      },
+      "content": {
+        "id": {
+          "summary": "Visual iklan produk dengan komposisi yang menyisakan ruang untuk judul atau penawaran.",
+          "input": "Foto produk opsional. Tanpa foto, prompt menggunakan cangkir keramik biru kobalt matte dengan badan silinder dan gagang berbentuk D, tanpa merek.",
+          "steps": ["Siapkan foto produk jika ingin memakai produkmu sendiri.", "Salin prompt lengkap; sesuaikan warna, produk, dan rasio bila perlu.", "Kirim ke ChatGPT untuk membuat gambar. Tambahkan teks promosi sendiri setelah memeriksa hasil."],
+          "prompt": "Buat foto iklan produk persegi. Jika ada foto terlampir, gunakan produknya sebagai acuan dan pertahankan identitas visualnya. Jika tidak ada foto, gunakan cangkir keramik biru kobalt matte, berbadan silinder dengan gagang berbentuk D, tanpa logo atau tulisan. Letakkan produk sedikit di bawah tengah pada permukaan krem hangat. Tambahkan elemen kertas lengkung biru yang sederhana di latar. Gunakan cahaya lembut dari kiri atas dan bayangan kontak yang realistis. Kopi boleh terlihat di dalam cangkir. Sisakan seperempat area atas untuk judul yang akan ditambahkan kemudian. Jangan buat teks, watermark, bingkai, atau kolase.",
+          "result": "Cangkir biru menjadi fokus di bagian bawah, dengan latar krem dan lengkung biru. Ruang kosong di atas dapat dipakai untuk menambahkan judul. Contoh ini menunjukkan arah komposisi iklan; tidak menyertakan klaim produk atau hasil kampanye."
+        },
+        "en": {
+          "summary": "Product ad imagery with room in the composition for a headline or offer.",
+          "input": "A product photo is optional. Without one, the prompt uses an unbranded matte cobalt-blue ceramic mug with a cylindrical body and D-shaped handle.",
+          "steps": ["Prepare a product photo if you want to use your own product.", "Copy the full prompt and adjust the colors, product, and ratio as needed.", "Ask ChatGPT to create the image. Add promotional text yourself after inspecting the result."],
+          "prompt": "Create a square product advertisement photograph. If a photo is attached, use its product as the reference and preserve its visual identity. Otherwise, use a matte cobalt-blue ceramic mug with a cylindrical body and D-shaped handle, without logos or lettering. Place the product slightly below center on a warm cream surface. Add a simple muted-blue curved paper element in the background. Use soft light from the upper left and a realistic contact shadow. Coffee may be visible inside the mug. Leave the upper quarter empty for a headline to be added later. Do not add text, watermarks, borders, or a collage.",
+          "result": "The blue mug is the focal point in the lower part, against a cream background and blue curve. Empty space above allows a headline to be added. This illustrates an ad composition, without product claims or campaign-performance claims."
+        }
+      },
+      "verification": {"method": "community", "checkedAt": "2026-11-10", "sources": [{"title": "Wishyani — /metaads", "url": "https://www.wishyani.com/commands/metaads"}], "note": {"id": "Sumber memakai kode ini untuk gambar iklan. Prompt di katalog merupakan redaksi baru; kode bukan command resmi ChatGPT.", "en": "The source uses this code for ad images. The catalog prompt is newly written; the code is not an official ChatGPT command."}}
+    },
+    {
+      "id": "3dbillboard", "name": "/3dbillboard", "type": "community-shorthand", "platform": "chatgpt-images", "category": "advertising",
+      "access": {"kind": "shorthand", "label": {"id": "Shorthand komunitas untuk konsep billboard. Salin deskripsi lengkapnya, bukan hanya nama kode.", "en": "Community shorthand for a billboard concept. Copy the full description, not just the code name."}},
+      "keywords": {"id": "billboard anamorfik iklan 3d kota bangunan layar produk raksasa", "en": "billboard anamorphic 3d advertising city building screen giant product"},
+      "example": {
+        "image": "/assets/examples/3dbillboard.png",
+        "alt": {"id": "Ilusi cangkir biru raksasa yang menonjol dari layar sudut gedung, di atas jalan kota saat senja.", "en": "An illusion of a giant blue mug projecting from a corner building display above a city street at dusk."},
+        "note": {"id": "Konsep billboard fiktif yang dibuat dengan Imagegen. Bukan foto instalasi nyata atau bukti perilaku command bawaan.", "en": "A fictional billboard concept created with Imagegen. Not a photo of a real installation or evidence of a built-in command."}
+      },
+      "content": {
+        "id": {
+          "summary": "Konsep produk berukuran raksasa yang seolah keluar dari layar billboard tiga dimensi.",
+          "input": "Foto produk opsional. Contoh katalog menggunakan deskripsi cangkir biru fiktif dan gedung kota, bukan lokasi atau kampanye nyata.",
+          "steps": ["Lampirkan foto produk jika tersedia.", "Salin prompt lengkap dan ganti suasana kota bila diperlukan.", "Buat gambar lalu periksa perspektif layar, skala produk, dan bentuk objek."],
+          "prompt": "Buat gambar persegi berupa konsep iklan billboard anamorfik 3D di sudut gedung kota modern saat senja. Gunakan produk dari foto terlampir bila ada; tanpa lampiran, gunakan cangkir keramik biru kobalt matte dengan badan silinder dan gagang D, tanpa merek. Layar besar yang melengkung mengikuti sudut gedung menampilkan cangkir raksasa dengan gagang seolah menonjol ke arah jalan. Tambahkan refleksi pada jalan basah dan beberapa pejalan kaki kecil sebagai pembanding skala. Gunakan warna biru dan cahaya amber dengan perspektif arsitektur yang masuk akal. Jangan tambahkan tulisan, logo baru, watermark, atau bingkai. Hasilnya adalah konsep visual fiktif, bukan dokumentasi pemasangan nyata.",
+          "result": "Cangkir biru tampak menonjol dari layar besar di sudut gedung. Pejalan kaki dan refleksi jalan memberi kesan skala. Ini konsep ilusi perspektif; detail fisik atau kelayakan pemasangan perlu dinilai terpisah."
+        },
+        "en": {
+          "summary": "A giant product concept that appears to project out of a three-dimensional billboard display.",
+          "input": "A product photo is optional. The catalog example uses a fictional blue mug description and city building, not a real location or campaign.",
+          "steps": ["Attach a product photo if available.", "Copy the full prompt and change the city atmosphere if needed.", "Create the image and inspect the screen perspective, product scale, and shape."],
+          "prompt": "Create a square image of a fictional 3D anamorphic billboard ad on the corner of a modern city building at dusk. Use the product in an attached photo if present; otherwise use an unbranded matte cobalt-blue ceramic mug with a cylindrical body and D-shaped handle. A large curved display follows the building corner and shows a giant mug whose handle appears to project toward the street. Add reflections on wet pavement and a few tiny pedestrians to establish scale. Use blue and amber lighting with plausible architectural perspective. Do not add lettering, new logos, watermarks, or borders. This is a fictional visual concept, not documentation of a real installation.",
+          "result": "The blue mug appears to project from a large corner display. Pedestrians and wet-street reflections establish scale. This is a perspective-illusion concept; physical details and installation feasibility need separate assessment."
+        }
+      },
+      "verification": {"method": "community", "checkedAt": "2026-11-10", "sources": [{"title": "Wishyani — /3dbillboard", "url": "https://www.wishyani.com/commands/3dbillboard"}], "note": {"id": "Referensi kode komunitas untuk konsep billboard, bukan sintaks resmi atau spesifikasi produksi iklan luar ruang.", "en": "A community code reference for billboard concepts, not official syntax or an outdoor-ad production specification."}}
+    },
+    {
+      "id": "showcase", "name": "/showcase", "type": "community-shorthand", "platform": "chatgpt-images", "category": "product-photo",
+      "access": {"kind": "shorthand", "label": {"id": "Shorthand komunitas untuk foto produk studio. Gunakan prompt lengkap.", "en": "Community shorthand for studio product photography. Use the full prompt."}},
+      "keywords": {"id": "foto produk studio katalog toko online bersih latar netral", "en": "product photography studio catalog ecommerce clean neutral background"},
+      "example": {
+        "image": "/assets/examples/showcase.png",
+        "alt": {"id": "Foto studio cangkir biru matte dengan gagang terlihat penuh pada latar abu-abu sangat terang.", "en": "A studio photo of a matte blue mug with its full handle visible against a very light grey background."},
+        "note": {"id": "Foto produk sintetis dibuat dengan Imagegen. Tidak menggunakan merek atau foto produk pengguna.", "en": "Synthetic product photograph created with Imagegen. No brand or user product photo was used."}
+      },
+      "content": {
+        "id": {
+          "summary": "Foto produk studio dengan latar netral dan detail bentuk yang mudah dilihat.",
+          "input": "Foto produk opsional. Tanpa foto, contoh menggunakan cangkir keramik biru tanpa merek agar gaya studio dapat dibandingkan dengan entri lain.",
+          "steps": ["Siapkan foto produk yang bentuknya terlihat jelas bila ada.", "Salin prompt dan sesuaikan warna latar serta sudut kamera.", "Buat hasil lalu periksa bentuk, warna, dan detail produk sebelum digunakan."],
+          "prompt": "Buat foto produk studio persegi. Bila ada foto produk terlampir, jadikan bentuk dan warnanya sebagai acuan. Bila tidak ada, gunakan cangkir keramik biru kobalt matte, berbadan silinder dengan gagang D dan tanpa merek. Letakkan produk di tengah pada latar abu-abu sangat terang yang menyatu dengan alas. Gunakan sudut tiga perempat setinggi cangkir, tampilkan seluruh badan dan gagang, serta isi sekitar dua pertiga bingkai. Gunakan softbox lebar agar tekstur keramik dan bayangan kontak terlihat alami. Tanpa properti tambahan, teks, watermark, efek melayang, atau percikan dramatis.",
+          "result": "Cangkir dan gagangnya terlihat penuh dengan tekstur keramik yang jelas. Latar abu-abu terang dan bayangan lembut menjaga perhatian pada bentuk produk. Hasil AI tetap perlu dibandingkan dengan produk asli jika dipakai untuk katalog penjualan."
+        },
+        "en": {
+          "summary": "Studio product photography with a neutral background and an easily inspected shape.",
+          "input": "A product photo is optional. Without one, the example uses an unbranded blue ceramic mug so the studio style can be compared with the other entries.",
+          "steps": ["Prepare a clearly visible product photo if you have one.", "Copy the prompt and adjust the background color and camera angle.", "Create the result, then inspect the product's shape, color, and details before using it."],
+          "prompt": "Create a square studio product photograph. If a product photo is attached, use its shape and colors as the reference. Otherwise use an unbranded matte cobalt-blue ceramic mug with a cylindrical body and D-shaped handle. Center the product on a very light grey seamless background and surface. Use a three-quarter angle at mug height, show the entire body and handle, and fill about two-thirds of the frame. Use broad softbox lighting to reveal natural ceramic texture and a soft contact shadow. No extra props, text, watermarks, floating effects, or dramatic splashes.",
+          "result": "The complete mug and handle show clear ceramic texture. A light grey background and soft shadow keep attention on the product's shape. Compare AI output against the real product before using it in a sales catalog."
+        }
+      },
+      "verification": {"method": "community", "checkedAt": "2026-11-10", "sources": [{"title": "Wishyani — /showcase", "url": "https://www.wishyani.com/commands/showcase"}], "note": {"id": "Nama kode berasal dari referensi komunitas. Instruksi katalog dirancang sendiri untuk contoh produk fiktif.", "en": "The code name comes from a community reference. Catalog instructions were independently written for the fictional product example."}}
+    },
+    {
+      "id": "ugcmodel", "name": "/ugcmodel", "type": "community-shorthand", "platform": "chatgpt-images", "category": "advertising",
+      "access": {"kind": "shorthand", "label": {"id": "Shorthand komunitas untuk gambar bergaya UGC dengan model fiktif, bukan testimoni pelanggan nyata.", "en": "Community shorthand for UGC-style imagery with a fictional model, not a real customer testimonial."}},
+      "keywords": {"id": "ugc model orang produk gaya hidup natural dapur foto ponsel", "en": "ugc model person product lifestyle natural kitchen smartphone photo"},
+      "example": {
+        "image": "/assets/examples/ugcmodel.png",
+        "alt": {"id": "Perempuan dewasa fiktif memegang cangkir biru dengan kedua tangan di dapur bercahaya pagi.", "en": "A fictional adult woman holds a blue mug in both hands in a kitchen lit by morning daylight."},
+        "note": {"id": "Model dan adegan dibuat dengan Imagegen. Ini ilustrasi sintetis, bukan foto atau rekomendasi pelanggan nyata.", "en": "The model and scene were created with Imagegen. This is a synthetic illustration, not a real customer photo or endorsement."}
+      },
+      "content": {
+        "id": {
+          "summary": "Gambar produk yang sedang digunakan oleh model fiktif dalam suasana sehari-hari.",
+          "input": "Foto produk opsional. Model dalam contoh adalah tokoh dewasa fiktif; tidak memakai foto wajah seseorang.",
+          "steps": ["Pilih produk dan suasana pemakaian yang ingin ditampilkan.", "Salin prompt lengkap; sesuaikan deskripsi model fiktif dan tempat.", "Buat gambar lalu periksa tangan, pegangan produk, dan detail wajah."],
+          "prompt": "Buat foto persegi bergaya jepretan ponsel yang natural. Tampilkan perempuan dewasa fiktif sekitar 30 tahun memakai kemeja linen krem, duduk di dapur saat sarapan. Ia memegang cangkir di ketinggian dada dengan kedua tangan yang anatomis. Gunakan produk pada foto terlampir bila tersedia; jika tidak, gunakan cangkir keramik biru kobalt matte berbadan silinder, bergagang D, tanpa merek. Wajah dan produk terlihat jelas. Gunakan cahaya jendela, tekstur kulit realistis, ekspresi ramah yang wajar, dan framing sedikit spontan. Hindari tampilan filter kecantikan, pose iklan berlebihan, tulisan testimoni, klaim manfaat, logo tambahan, serta watermark.",
+          "result": "Tokoh fiktif memegang cangkir di dapur dengan suasana sarapan dan cahaya alami. Framing serta tekstur dibuat menyerupai foto ponsel. Penampilannya tidak boleh disajikan sebagai dokumentasi atau testimoni pengguna sungguhan."
+        },
+        "en": {
+          "summary": "A product in use by a fictional model in an everyday setting.",
+          "input": "A product photo is optional. The sample model is a fictional adult; no person's face photo was used.",
+          "steps": ["Choose the product and everyday setting you want to show.", "Copy the full prompt and adapt the fictional model and location.", "Create the image and inspect the hands, product grip, and facial details."],
+          "prompt": "Create a square natural smartphone-style photo. Show a fictional adult woman about 30 wearing a cream linen shirt, seated in a kitchen at breakfast. She holds a mug at chest height in anatomically plausible hands. Use the product from an attached photo if available; otherwise use an unbranded matte cobalt-blue ceramic mug with a cylindrical body and D-shaped handle. Keep the face and product clearly visible. Use window daylight, realistic skin texture, a gently friendly expression, and slightly spontaneous framing. Avoid beauty-filter effects, exaggerated advertising poses, testimonial text, benefit claims, added logos, and watermarks.",
+          "result": "A fictional person holds the mug in a kitchen breakfast scene with natural light. Framing and texture resemble a smartphone photo. Do not present it as documentation or a testimonial from a real customer."
+        }
+      },
+      "verification": {"method": "community", "checkedAt": "2026-11-10", "sources": [{"title": "Wishyani — /ugcmodel", "url": "https://www.wishyani.com/commands/ugcmodel"}], "note": {"id": "Referensi memakai nama ini untuk visual bergaya UGC. Contoh katalog memakai model fiktif dan prompt baru.", "en": "The reference uses this name for UGC-style visuals. The catalog example uses a fictional model and a newly written prompt."}}
+    },
+    {
+      "id": "miniature", "name": "/miniature", "type": "community-shorthand", "platform": "chatgpt-images", "category": "miniature",
+      "access": {"kind": "shorthand", "label": {"id": "Shorthand komunitas untuk gaya diorama. Gunakan prompt lengkap agar skala dan materialnya jelas.", "en": "Community shorthand for a diorama style. Use the full prompt to specify scale and materials."}},
+      "keywords": {"id": "miniatur diorama kedai kopi makro tilt shift kerajinan dunia kecil", "en": "miniature diorama coffee stand macro tilt shift craft tiny world"},
+      "example": {
+        "image": "/assets/examples/miniature.png",
+        "alt": {"id": "Diorama kedai kopi berbentuk cangkir biru dengan figur kecil, meja kayu, tanaman, dan lampu hangat.", "en": "A blue mug-shaped coffee-stand diorama with tiny figures, a wooden counter, plants, and warm lights."},
+        "note": {"id": "Diorama sintetis dibuat dengan Imagegen. Bukan foto kerajinan yang sudah diproduksi atau transformasi foto masukan.", "en": "A synthetic diorama created with Imagegen. Not a photo of a manufactured craft or a transformation of an input photo."}
+      },
+      "content": {
+        "id": {
+          "summary": "Menafsirkan produk atau tempat sebagai diorama kecil dengan kesan buatan tangan.",
+          "input": "Foto produk atau tempat opsional. Contoh tanpa lampiran memakai gagasan cangkir biru yang ditafsirkan menjadi kios kopi mini.",
+          "steps": ["Pilih foto acuan jika ada, atau gunakan produk contoh pada prompt.", "Salin prompt; sesuaikan jumlah figur dan suasana miniatur.", "Buat gambar lalu periksa skala objek dan detail kecil."],
+          "prompt": "Buat gambar persegi berupa foto makro diorama buatan tangan. Gunakan bentuk produk dari foto terlampir jika ada sebagai inspirasi kios mini; tanpa lampiran, buat kios kopi berbentuk cangkir keramik biru kobalt dengan badan silinder dan gagang D yang terlihat jelas di kanan. Tambahkan meja layanan kayu, tiga figur kecil, tanaman kertas, dan kemasan kopi kecil. Letakkan seluruh diorama pada alas kayu persegi panjang di atas meja netral. Tampilkan tekstur kayu dicat dan kertas kerajinan, lampu kecil yang hangat, serta sudut kamera tiga perempat agak tinggi. Gunakan fokus makro dangkal bergaya tilt-shift dengan area tengah tetap detail. Tanpa tulisan terbaca, logo, watermark, atau bingkai.",
+          "result": "Kedai mini berbentuk cangkir biru memiliki meja layanan, figur kecil, dan lampu hangat. Tekstur serta fokus dangkal memberi kesan kerajinan berskala kecil. Ini interpretasi kreatif produk, bukan tiruan teknis yang mempertahankan seluruh detail aslinya."
+        },
+        "en": {
+          "summary": "Reimagine a product or place as a tiny handcrafted-looking diorama.",
+          "input": "A product or location photo is optional. With no attachment, the example reimagines a blue mug as a miniature coffee kiosk.",
+          "steps": ["Choose a reference photo if you have one, or keep the prompt's sample product.", "Copy the prompt and adjust the figures and miniature atmosphere.", "Create the image and inspect object scale and tiny details."],
+          "prompt": "Create a square macro photograph of a handcrafted diorama. If a product photo is attached, use its shape as inspiration for a tiny kiosk; otherwise create a coffee kiosk shaped like a cobalt-blue ceramic mug with a cylindrical body and a clearly visible D-shaped handle on the right. Add a wooden service counter, three tiny figures, paper plants, and miniature coffee bags. Put the complete diorama on a rectangular wooden base on a neutral table. Show painted-wood and craft-paper textures, small warm lights, and a slightly elevated three-quarter camera angle. Use shallow macro tilt-shift focus while keeping the central scene detailed. No readable text, logos, watermarks, or borders.",
+          "result": "A mug-shaped blue coffee stand contains a service counter, tiny figures, and warm lights. Textures and shallow focus suggest a small handmade model. This is a creative interpretation, not a technical replica that preserves every original detail."
+        }
+      },
+      "verification": {"method": "community", "checkedAt": "2026-11-10", "sources": [{"title": "Wishyani — /miniature", "url": "https://www.wishyani.com/commands/miniature"}], "note": {"id": "Sumber merujuk nama kode untuk gaya diorama. Produk dan komposisi contoh katalog dirancang tersendiri.", "en": "The source references the code name for a diorama style. The catalog's sample product and composition were independently designed."}}
+    },
+    {
+      "id": "storybook",
+      "name": "/storybook",
+      "type": "community-shorthand",
+      "platform": "chatgpt-images",
+      "category": "illustration",
+      "access": {
+        "kind": "shorthand",
+        "label": {
+          "id": "Shorthand komunitas untuk ilustrasi buku cerita anak. Gunakan prompt lengkap untuk menjelaskan adegan.",
+          "en": "Community shorthand for children's picture-book illustrations. Use the full prompt to describe the scene."
+        }
+      },
+      "keywords": {
+        "id": "ilustrasi buku cerita anak dongeng kelinci kebun cat air gouache gambar tangan",
+        "en": "illustration children picture book story rabbit garden watercolor gouache hand painted"
+      },
+      "example": {
+        "image": "/assets/examples/storybook.png",
+        "alt": {
+          "id": "Kelinci bercelemek kuning menyiram bibit di dalam cangkir biru di kebun, dengan tekstur cat air dan gouache.",
+          "en": "A rabbit in a yellow apron waters a seedling in a blue mug in a garden, with watercolor and gouache texture."
+        },
+        "note": {
+          "id": "Ilustrasi AI orisinal dibuat dengan Imagegen tanpa foto masukan. Tokoh dan adegan fiktif, bukan halaman dari buku yang sudah terbit.",
+          "en": "Original AI illustration created with Imagegen without input photos. The character and scene are fictional, not a page from a published book."
+        }
+      },
+      "content": {
+        "id": {
+          "summary": "Mengubah gagasan adegan menjadi ilustrasi hangat bergaya buku cerita anak.",
+          "input": "Deskripsi adegan; foto acuan opsional. Tanpa acuan, contoh memakai kelinci fiktif yang merawat bibit di dalam cangkir biru tanpa merek.",
+          "steps": [
+            "Tentukan tokoh, tindakan, dan latar yang ingin digambar; lampirkan foto acuan bila ada.",
+            "Salin prompt lengkap dan sesuaikan adegan serta kelompok usia pembaca.",
+            "Buat gambar lalu periksa keterbacaan adegan, bentuk objek, dan konsistensi tokoh sebelum melanjutkan halaman berikutnya."
+          ],
+          "prompt": "Buat satu ilustrasi persegi bergaya buku cerita anak. Bila ada foto acuan, gunakan objek utamanya sebagai inspirasi adegan; bila tidak, gambarkan kelinci cokelat kecil yang ramah memakai celemek oker, menyiram bibit hijau yang tumbuh di tanah di dalam cangkir keramik biru kobalt matte tanpa merek, berbadan silinder dan bergagang D. Gunakan penyiram kecil berwarna krem. Seluruh cangkir dan gagangnya terlihat. Letakkan adegan di kebun sederhana dengan beberapa bunga dan pagar kayu di belakang. Gunakan tekstur cat air dan gouache di atas kertas gading, bentuk membulat, ekspresi lembut, serta cahaya pagi hangat. Buat tindakan tokoh mudah dipahami dengan komposisi yang tidak ramai. Jangan tambahkan teks, logo, watermark, bingkai, atau kolase.",
+          "result": "Ilustrasi kelinci menyiram bibit dalam cangkir biru, dikelilingi bunga dan pagar kebun. Warna hangat dan tekstur lukisan mendukung suasana bercerita. Contoh berupa satu adegan; kesinambungan tokoh antarhalaman tetap perlu diperiksa."
+        },
+        "en": {
+          "summary": "Turn a scene idea into a warm children's picture-book illustration.",
+          "input": "A scene description; a reference photo is optional. Without a reference, the example uses a fictional rabbit tending a seedling in an unbranded blue mug.",
+          "steps": [
+            "Choose the character, action, and setting; attach a reference photo if available.",
+            "Copy the full prompt and adapt the scene and intended reader age.",
+            "Create the image and inspect scene readability, object shapes, and character consistency before continuing to another page."
+          ],
+          "prompt": "Create one square children's picture-book illustration. If a reference photo is attached, use its main object as inspiration for the scene; otherwise show a friendly small brown rabbit wearing an ochre apron, watering a green seedling growing in soil inside an unbranded matte cobalt-blue ceramic mug with a cylindrical body and D-shaped handle. Use a small cream watering can. Keep the entire mug and handle visible. Set the scene in a simple garden with a few flowers and a wooden fence behind. Use watercolor and gouache texture on ivory paper, rounded shapes, a gentle expression, and warm morning light. Make the character's action easy to understand with an uncluttered composition. Do not add text, logos, watermarks, borders, or a collage.",
+          "result": "An illustration of a rabbit watering a seedling in a blue mug, surrounded by flowers and a garden fence. Warm colors and painted texture support the storytelling mood. This example is one scene; character continuity across pages still needs review."
+        }
+      },
+      "verification": {
+        "method": "community",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "title": "Wishyani — /storybook",
+            "url": "https://www.wishyani.com/commands/storybook"
+          }
+        ],
+        "note": {
+          "id": "Referensi menggunakan nama ini untuk ilustrasi buku cerita anak. Prompt katalog ditulis sendiri, bukan salinan atau terjemahan verbatim sumber. Kode bukan command resmi ChatGPT.",
+          "en": "The reference uses this name for children's picture-book illustrations. The catalog prompt is independently written, not a copy or verbatim translation of the source. The code is not an official ChatGPT command."
+        }
+      }
+    }
+  ]
+}
