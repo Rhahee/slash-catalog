@@ -1,5 +1,14 @@
 # QA — image prompt catalog
 
+## Scheduled update — 13 November 2026
+
+- Reviewed Arjav Jain's author-published list at https://arjavjain.org/posts/chatgpt-image-prompt-codes-slash-commands. Added /birdseye (overhead tabletop composition) and /blueprint (white-line technical-style illustration); these concepts are distinct from the six existing entries. This run selected two additions, not an exhaustive import of the source list. The six prior entry objects are unchanged.
+- Catalog now has eight entries, with original full Indonesian/English prompts, localized input/steps/result/example metadata, community attribution, and checkedAt 2026-11-13. Blueprint is explicitly a decorative concept illustration without validated scale or manufacturing dimensions.
+- Created assets/examples/birdseye.png and assets/examples/blueprint.png through built-in image_gen without input images. Inspected both returned images: overhead coffee arrangement and three mug line views on blue paper; no unwanted text or logos. The blueprint upper-left view contains a slightly elliptical rim, so it should not be treated as strict orthographic geometry. Actual tool prompts and output/source file paths are in artifacts/image-generation-prompts.json; copied bytes match the source PNGs.
+- npm test: 9 passed. Server syntax and git diff --check passed. New bilingual searches with category filters passed. All ten public page/data/image routes on http://127.0.0.1:4177/ returned HTTP 200, with image/png for all eight images.
+- In-app browser was unavailable. Browser verification succeeded through connected Brave: eight entries listed, both new detail dialogs open, language switching ID/EN works, birdseye search returns one result, and both new example images decode at 1254 x 1254. Desktop screenshot inspection showed readable modal layout and vertical scrolling. Mobile layout and clipboard were not retested for this content-only addition.
+- Updated the server's explicit asset allowlist. A separate local preview uses port 4177; earlier servers were not stopped or restarted. No commit, push, or deploy.
+
 ## Update — 11 November 2026
 
 - Added /storybook after reviewing https://www.wishyani.com/commands/storybook and the source index. This is the only additional image shorthand in that index; /eli5 and /tldr are text prompts and remain outside catalog scope.

@@ -1,13 +1,14 @@
 {
   "version": 2,
   "scope": "image-prompts",
-  "reviewedAt": "2026-11-11",
+  "reviewedAt": "2026-11-13",
   "status": "ready",
   "researchNote": {
-    "id": "Katalog ini memuat shorthand prompt khusus pembuatan gambar. Nama kode ditemukan pada referensi komunitas Wishyani, bukan daftar command resmi OpenAI. Prompt lengkap ditulis untuk katalog ini. Contoh visual dibuat dengan Imagegen dari deskripsi cangkir biru fiktif tanpa foto masukan; contoh tersebut tidak membuktikan bahwa kode pendek saja menghasilkan gambar tertentu.",
-    "en": "This catalog contains image-generation prompt shorthands. Their code names were found in the Wishyani community reference, not an official OpenAI command list. Full prompts were written for this catalog. Visual examples were created with Imagegen from descriptions of a fictional blue mug, without input photos; they do not establish that short codes alone produce a particular image."
+    "id": "Katalog ini memuat shorthand prompt khusus pembuatan gambar. Nama kode ditemukan pada referensi komunitas Wishyani dan Arjav Jain, bukan daftar command resmi OpenAI. Prompt lengkap ditulis untuk katalog ini. Contoh visual dibuat dengan Imagegen dari deskripsi cangkir biru fiktif tanpa foto masukan; contoh tersebut tidak membuktikan bahwa kode pendek saja menghasilkan gambar tertentu.",
+    "en": "This catalog contains image-generation prompt shorthands. Their code names were found in the Wishyani and Arjav Jain community references, not an official OpenAI command list. Full prompts were written for this catalog. Visual examples were created with Imagegen from descriptions of a fictional blue mug, without input photos; they do not establish that short codes alone produce a particular image."
   },
   "sources": [
+    {"url": "https://arjavjain.org/posts/chatgpt-image-prompt-codes-slash-commands", "title": "Arjav Jain — 23 ChatGPT Image Prompt Codes", "note": {"id": "Referensi penggunaan nama /birdseye dan /blueprint untuk sudut kamera dan gaya ilustrasi.", "en": "Reference for /birdseye and /blueprint as camera-angle and illustration-style prompt names."}},
     {"url": "https://www.wishyani.com/commands/metaads", "title": "Wishyani — /metaads", "note": {"id": "Referensi penggunaan nama kode untuk visual iklan produk.", "en": "Reference for the code name used for product ad imagery."}},
     {"url": "https://www.wishyani.com/commands/3dbillboard", "title": "Wishyani — /3dbillboard", "note": {"id": "Referensi nama kode untuk konsep billboard anamorfik.", "en": "Reference for the anamorphic billboard concept code."}},
     {"url": "https://www.wishyani.com/commands/showcase", "title": "Wishyani — /showcase", "note": {"id": "Referensi nama kode untuk foto produk studio.", "en": "Reference for the studio product photography code."}},
@@ -22,6 +23,140 @@
     {"id": "illustration", "label": {"id": "Ilustrasi", "en": "Illustration"}}
   ],
   "entries": [
+    {
+      "id": "birdseye",
+      "name": "/birdseye",
+      "type": "community-shorthand",
+      "platform": "chatgpt-images",
+      "category": "product-photo",
+      "verification": {
+        "method": "community",
+        "checkedAt": "2026-11-13",
+        "sources": [
+          {
+            "title": "Arjav Jain — 23 ChatGPT Image Prompt Codes",
+            "url": "https://arjavjain.org/posts/chatgpt-image-prompt-codes-slash-commands"
+          }
+        ],
+        "note": {
+          "id": "Referensi komunitas menggunakan nama ini untuk arah visual tersebut. Prompt katalog ditulis sendiri, bukan salinan atau terjemahan verbatim sumber. Kode bukan command resmi ChatGPT.",
+          "en": "The community reference uses this name for this visual direction. The catalog prompt is independently written, not a copy or verbatim translation of the source. The code is not an official ChatGPT command."
+        }
+      },
+      "access": {
+        "kind": "shorthand",
+        "label": {
+          "id": "Shorthand komunitas untuk sudut tepat dari atas. Salin prompt lengkap untuk menjelaskan posisi kamera dan objek.",
+          "en": "Community shorthand for a directly overhead view. Copy the full prompt to specify the camera and object arrangement."
+        }
+      },
+      "keywords": {
+        "id": "foto produk dari atas flat lay flatlay meja kopi sudut kamera tegak lurus",
+        "en": "product photography overhead top down flat lay flatlay tabletop coffee camera angle"
+      },
+      "example": {
+        "image": "/assets/examples/birdseye.png",
+        "alt": {
+          "id": "Cangkir biru berisi kopi dilihat tepat dari atas di meja krem, dengan serbet, sendok, dan beberapa biji kopi.",
+          "en": "A blue coffee-filled mug seen directly from above on a cream table, with a napkin, spoon, and a few coffee beans."
+        },
+        "note": {
+          "id": "Foto sintetis dibuat dengan Imagegen dari deskripsi objek fiktif tanpa foto masukan. Contoh menunjukkan arah komposisi, bukan hasil kode pendek saja.",
+          "en": "Synthetic photo created with Imagegen from a fictional object description without input photos. The example illustrates a composition, not the result of the short code alone."
+        }
+      },
+      "content": {
+        "id": {
+          "summary": "Foto flat lay dengan kamera tepat di atas objek untuk memperlihatkan susunan pada permukaan meja.",
+          "input": "Deskripsi objek dan benda pendamping; foto produk opsional. Tanpa foto, gunakan cangkir keramik biru kobalt matte tanpa merek, berbadan silinder dan bergagang D.",
+          "steps": [
+            "Pilih objek utama dan beberapa benda pendamping; lampirkan foto produk bila tersedia.",
+            "Salin prompt lengkap dan sesuaikan susunan objek tanpa mengubah kamera yang tegak lurus meja.",
+            "Buat gambar lalu periksa bentuk bukaan cangkir, arah gagang, jarak antarobjek, dan bayangannya."
+          ],
+          "prompt": "Buat satu foto flat lay persegi dengan kamera tepat di atas meja krem hangat dan menghadap tegak lurus ke bawah, tanpa horizon atau sudut miring. Gunakan produk pada foto terlampir bila ada sebagai acuan bentuk dan warna; tanpa foto, gunakan cangkir keramik biru kobalt matte, berbadan silinder dengan gagang D mengarah ke kanan, tanpa merek, berisi kopi hitam. Bukaan cangkir terlihat melingkar dari atas dan seluruh gagangnya masuk bingkai. Tambahkan serbet linen krem terlipat di kiri bawah, sendok kecil perak terpisah di kanan, dan beberapa biji kopi dekat tepi bawah. Sisakan jarak yang nyaman antarobjek. Gunakan cahaya jendela lembut dari kiri atas, bayangan realistis, serta tekstur keramik dan kain yang natural. Jangan tambahkan teks, angka, logo, bingkai, kolase, atau watermark.",
+          "result": "Susunan cangkir, serbet, sendok, dan biji kopi terbaca dari atas pada latar krem. Sudut ini menekankan tata letak dan bukaan cangkir, berbeda dari foto studio tiga perempat pada /showcase."
+        },
+        "en": {
+          "summary": "A flat-lay photo with the camera directly above the objects to show their tabletop arrangement.",
+          "input": "Describe the main object and accompanying items; a product photo is optional. Without one, use an unbranded matte cobalt-blue ceramic mug with a cylindrical body and D-shaped handle.",
+          "steps": [
+            "Choose the main object and a few accompanying items; attach a product photo if available.",
+            "Copy the full prompt and adapt the arrangement while keeping the camera perpendicular to the table.",
+            "Create the image and inspect the mug opening, handle direction, spacing, and shadows."
+          ],
+          "prompt": "Create one square flat-lay photograph with the camera directly above a warm cream tabletop and looking vertically down, with no horizon or oblique angle. If a product photo is attached, use it as a reference for shape and color; otherwise use an unbranded matte cobalt-blue ceramic mug with a cylindrical body and D-shaped handle pointing right, filled with dark coffee. Show the circular opening from above and keep the whole handle in frame. Add a folded cream linen napkin at the lower left, a separate small silver spoon to the right, and a few coffee beans near the bottom edge. Leave comfortable space between objects. Use soft window light from the upper left, realistic shadows, and natural ceramic and fabric textures. Do not add text, numbers, logos, borders, collages, or watermarks.",
+          "result": "The arrangement of mug, napkin, spoon, and coffee beans is visible from above on a cream background. This view emphasizes layout and the mug opening, unlike the three-quarter studio photo in /showcase."
+        }
+      }
+    },
+    {
+      "id": "blueprint",
+      "name": "/blueprint",
+      "type": "community-shorthand",
+      "platform": "chatgpt-images",
+      "category": "illustration",
+      "verification": {
+        "method": "community",
+        "checkedAt": "2026-11-13",
+        "sources": [
+          {
+            "title": "Arjav Jain — 23 ChatGPT Image Prompt Codes",
+            "url": "https://arjavjain.org/posts/chatgpt-image-prompt-codes-slash-commands"
+          }
+        ],
+        "note": {
+          "id": "Referensi komunitas menggunakan nama ini untuk arah visual tersebut. Prompt katalog ditulis sendiri, bukan salinan atau terjemahan verbatim sumber. Kode bukan command resmi ChatGPT.",
+          "en": "The community reference uses this name for this visual direction. The catalog prompt is independently written, not a copy or verbatim translation of the source. The code is not an official ChatGPT command."
+        }
+      },
+      "access": {
+        "kind": "shorthand",
+        "label": {
+          "id": "Shorthand komunitas untuk ilustrasi bergaya blueprint. Gunakan prompt lengkap; hasil contoh bukan gambar kerja produksi.",
+          "en": "Community shorthand for a blueprint-style illustration. Use the full prompt; the example is not a manufacturing drawing."
+        }
+      },
+      "keywords": {
+        "id": "ilustrasi blueprint gambar teknik sketsa garis biru tampak samping atas konsep produk",
+        "en": "illustration blueprint technical drawing schematic white linework blue side elevation top plan product concept"
+      },
+      "example": {
+        "image": "/assets/examples/blueprint.png",
+        "alt": {
+          "id": "Ilustrasi garis putih cangkir dalam tiga tampak pada latar biru dengan kisi halus, tanpa ukuran atau label.",
+          "en": "A white-line illustration of a mug in three views on a blue background with a fine grid, without dimensions or labels."
+        },
+        "note": {
+          "id": "Ilustrasi AI dibuat dengan Imagegen tanpa foto atau model CAD masukan. Gambar dekoratif ini tidak berskala tervalidasi dan tidak ditujukan sebagai acuan produksi.",
+          "en": "AI illustration created with Imagegen without an input photo or CAD model. This decorative drawing has no validated scale and is not intended as a manufacturing reference."
+        }
+      },
+      "content": {
+        "id": {
+          "summary": "Menafsirkan bentuk objek sebagai ilustrasi garis putih pada latar biru dengan kesan gambar teknik.",
+          "input": "Deskripsi bentuk objek; foto acuan opsional. Contoh memakai bentuk cangkir silinder bergagang D yang digambar ulang sebagai garis, tanpa ukuran teknis.",
+          "steps": [
+            "Pilih bentuk objek sederhana dan tentukan tampak yang ingin ditampilkan.",
+            "Salin prompt lengkap; gunakan ukuran terverifikasi dari sumber lain bila memang dibutuhkan untuk pekerjaan teknik.",
+            "Buat gambar lalu periksa konsistensi bentuk antartampak; perlakukan hasil sebagai ilustrasi konsep."
+          ],
+          "prompt": "Buat satu ilustrasi blueprint dekoratif persegi. Bila ada foto acuan, gunakan siluet objeknya sebagai inspirasi; tanpa foto, gunakan cangkir keramik fiktif berbadan silinder dan bergagang D. Gambar dengan garis tipis putih gading pada latar kertas biru kobalt gelap berkisi sangat halus. Susun tiga tampak terpisah dengan ruang yang lega: tampak samping besar di kiri atas dengan gagang ke kanan, tampak atas kecil di kanan atas dengan gagang ke kanan, dan tampak tiga perempat berupa garis di tengah bawah. Ketiganya harus menggambarkan bentuk cangkir berongga yang sama. Gunakan proporsi konsisten dan beberapa garis sumbu yang sederhana. Jangan tambahkan dimensi, panah ukuran, label, huruf, angka, kotak judul, logo, watermark, bingkai, komponen terurai, atau mekanisme di dalamnya. Ini ilustrasi bergaya gambar teknik, bukan gambar kerja berskala yang sudah divalidasi.",
+          "result": "Bentuk cangkir disajikan sebagai tampak samping, atas, dan tiga perempat berupa garis putih pada latar biru. Hasil mendukung presentasi konsep visual; ketepatan geometri dan skala tidak dijamin."
+        },
+        "en": {
+          "summary": "Reinterpret an object's shape as white linework on blue paper with a technical-drawing appearance.",
+          "input": "Describe the object's shape; a reference photo is optional. The example redraws a cylindrical mug with a D-shaped handle as linework, without technical dimensions.",
+          "steps": [
+            "Choose a simple object and decide which views to show.",
+            "Copy the full prompt; obtain verified measurements separately if needed for engineering work.",
+            "Create the image and inspect shape consistency across views; treat it as a concept illustration."
+          ],
+          "prompt": "Create one square decorative blueprint illustration. If a reference photo is attached, use its object silhouette as inspiration; otherwise use a fictional ceramic mug with a cylindrical body and D-shaped handle. Draw thin ivory-white lines on deep cobalt-blue paper with an extremely subtle fine grid. Arrange three separate views with generous space: a large side elevation at the upper left with the handle pointing right, a smaller top plan at the upper right with the handle pointing right, and a three-quarter outline view centered below. All three should describe the same hollow mug. Use consistent proportions and a few simple centerlines. Do not add dimensions, measurement arrows, labels, letters, numbers, title blocks, logos, watermarks, borders, exploded parts, or internal mechanisms. This is a technical-drawing-style illustration, not a validated scale drawing for manufacturing.",
+          "result": "The mug is presented in side, top, and three-quarter views as white lines on blue paper. The result supports a visual concept presentation; geometric and scale accuracy are not guaranteed."
+        }
+      }
+    },
     {
       "id": "metaads", "name": "/metaads", "type": "community-shorthand", "platform": "chatgpt-images", "category": "advertising",
       "access": {"kind": "shorthand", "label": {"id": "Shorthand komunitas. Gunakan prompt lengkap di bawah untuk memberi instruksi yang jelas.", "en": "Community shorthand. Use the full prompt below to give clear instructions."}},

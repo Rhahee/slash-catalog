@@ -1,6 +1,6 @@
 # Slash Catalog — Prompt Gambar ChatGPT
 
-Katalog **shorthand prompt komunitas khusus image generator ChatGPT**. Semua entri fitur aplikasi dari versi sebelumnya telah diganti. HTML, CSS, JavaScript, JSON, dan enam gambar PNG lokal; tanpa dependensi npm, backend aplikasi, database, atau API runtime.
+Katalog **shorthand prompt komunitas khusus image generator ChatGPT**. Semua entri fitur aplikasi dari versi sebelumnya telah diganti. HTML, CSS, JavaScript, JSON, dan delapan gambar PNG lokal; tanpa dependensi npm, backend aplikasi, database, atau API runtime.
 
 ## Isi katalog
 
@@ -12,6 +12,8 @@ Katalog **shorthand prompt komunitas khusus image generator ChatGPT**. Semua ent
 | `/ugcmodel` | Produk bersama model dewasa fiktif | [Wishyani](https://www.wishyani.com/commands/ugcmodel) |
 | `/miniature` | Diorama produk dengan gaya kerajinan mini | [Wishyani](https://www.wishyani.com/commands/miniature) |
 | `/storybook` | Ilustrasi hangat bergaya buku cerita anak | [Wishyani](https://www.wishyani.com/commands/storybook) |
+| `/birdseye` | Komposisi flat lay dari tepat di atas objek | [Arjav Jain](https://arjavjain.org/posts/chatgpt-image-prompt-codes-slash-commands#birdseye) |
+| `/blueprint` | Ilustrasi garis bergaya gambar teknik | [Arjav Jain](https://arjavjain.org/posts/chatgpt-image-prompt-codes-slash-commands#blueprint) |
 
 Kode tersebut **bukan command resmi atau fitur tersembunyi OpenAI**. Referensi komunitas menjelaskan penggunaan nama dan konsepnya. Prompt lengkap ditulis sendiri dalam bahasa Indonesia dan Inggris, bukan salinan atau terjemahan verbatim dari artikel sumber.
 
@@ -32,7 +34,7 @@ Jika server sudah berjalan saat `scripts/serve.mjs` diubah, mulai ulang agar rut
 
 ## Contoh visual dan provenance
 
-- Enam gambar asli dibuat dengan **built-in image_gen**, lalu disalin ke `assets/examples/`. Tidak menggunakan API key atau mengambil gambar dari situs komunitas.
+- Delapan gambar asli dibuat dengan **built-in image_gen**, lalu disalin ke `assets/examples/`. Tidak menggunakan API key atau mengambil gambar dari situs komunitas.
 - Produk contoh: cangkir keramik biru kobalt matte, berbadan silinder dan bergagang D, tanpa merek.
 - Semua gambar dibuat independen tanpa foto masukan. Tidak ada klaim transformasi sebelum/sesudah, kesetiaan produk identik, atau bahwa `/kode` saja menghasilkan contoh tersebut.
 - Model manusia dalam contoh UGC adalah tokoh fiktif, bukan pelanggan atau pemberi testimoni.

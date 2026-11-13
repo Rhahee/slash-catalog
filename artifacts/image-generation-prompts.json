@@ -4,6 +4,20 @@
   "note": "Independently generated examples of a fictional unbranded blue mug. These are illustrations of full prompt concepts, not evidence that shorthand codes alone invoke built-in ChatGPT commands.",
   "prompts": [
     {
+      "id": "birdseye",
+      "generatedAt": "2026-11-13",
+      "sourceFile": "C:/Users/rahen/.codex/generated_images/01a1c7c1-f42e-7403-aafd-0349039870ba/exec-1530af8d-1c9f-49ed-9bb3-590598fb189f.png",
+      "outputFile": "assets/examples/birdseye.png",
+      "prompt": "Create one square photorealistic overhead flat-lay photograph for an image-prompt catalog. Camera exactly vertically above a warm cream tabletop, with no angled or oblique perspective and no horizon. The main object is a fictional unbranded matte cobalt-blue ceramic mug with a circular cylindrical body and D-shaped handle pointing to the right; the mug contains dark coffee. Show its circular opening clearly from directly above, with its handle fully visible. Place a small plain cream linen napkin folded to the lower left, a simple silver teaspoon lying separately to the right, and a few scattered coffee beans near the bottom edge, leaving comfortable space between items. Soft morning window light from the upper left, gentle realistic shadows, natural ceramic and fabric textures, restrained calm composition. Do not add text, numbers, logos, borders, collages, or watermarks. Generate from this description alone without any reference image. This is a fictional independently generated example of the full prompt, not proof of a built-in slash command."
+    },
+    {
+      "id": "blueprint",
+      "generatedAt": "2026-11-13",
+      "sourceFile": "C:/Users/rahen/.codex/generated_images/01a1c7c1-f42e-7403-aafd-0349039870ba/exec-32c0ff2f-c5ae-4a89-86b5-cc0fc83508a7.png",
+      "outputFile": "assets/examples/blueprint.png",
+      "prompt": "Create one square decorative blueprint-style illustration for an image-prompt catalog. A fictional ceramic coffee mug with a simple cylindrical body and D-shaped handle is the only subject. On a deep cobalt-blue paper background with an extremely subtle fine grid, draw crisp thin ivory-white technical linework. Compose three separate aligned views with generous space: a large side elevation in the upper left with the handle pointing right, a smaller top-down circular plan view in the upper right also with the D-shaped handle on the right, and a simple three-quarter outline view centered in the lower half. All views describe the same simple hollow mug. Use consistent proportions and clean silhouettes, with a few unobtrusive centerlines but NO dimensions, measurement arrows, labels, letters, numbers, title block or text of any kind. No logos, watermark, borders, photographic shading, extra objects, internal mechanisms or exploded components. This is a fictional stylized illustration, not a dimensionally validated engineering drawing or manufacturing plan. Generate independently from this description without input photos. The white linework should contrast clearly with the cobalt paper."
+    },
+    {
       "id": "storybook",
       "generatedAt": "2026-11-11",
       "sourceFile": "C:/Users/rahen/.codex/generated_images/01a1c7c1-f42e-7403-aafd-0349039870ba/exec-ce0722ee-60ae-40b7-9b80-a6aed9266499.png",

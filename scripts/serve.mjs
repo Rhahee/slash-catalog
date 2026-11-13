@@ -16,7 +16,7 @@ const routes = new Map([
   ['/favicon.svg', 'favicon.svg'], ['/data/catalog.json', 'data/catalog.json']
 ]);
 // Explicit asset allowlist; never expose arbitrary workspace files.
-for (const id of ['metaads', '3dbillboard', 'showcase', 'ugcmodel', 'miniature', 'storybook']) {
+for (const id of ['metaads', '3dbillboard', 'showcase', 'ugcmodel', 'miniature', 'storybook', 'birdseye', 'blueprint']) {
   routes.set(`/assets/examples/${id}.png`, `assets/examples/${id}.png`);
 }
 const types = {'.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png'};
