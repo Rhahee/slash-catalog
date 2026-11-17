@@ -1,14 +1,14 @@
 {
   "version": 2,
   "scope": "image-prompts",
-  "reviewedAt": "2026-11-13",
+  "reviewedAt": "2026-11-17",
   "status": "ready",
   "researchNote": {
     "id": "Katalog ini memuat shorthand prompt khusus pembuatan gambar. Nama kode ditemukan pada referensi komunitas Wishyani dan Arjav Jain, bukan daftar command resmi OpenAI. Prompt lengkap ditulis untuk katalog ini. Contoh visual dibuat dengan Imagegen dari deskripsi cangkir biru fiktif tanpa foto masukan; contoh tersebut tidak membuktikan bahwa kode pendek saja menghasilkan gambar tertentu.",
     "en": "This catalog contains image-generation prompt shorthands. Their code names were found in the Wishyani and Arjav Jain community references, not an official OpenAI command list. Full prompts were written for this catalog. Visual examples were created with Imagegen from descriptions of a fictional blue mug, without input photos; they do not establish that short codes alone produce a particular image."
   },
   "sources": [
-    {"url": "https://arjavjain.org/posts/chatgpt-image-prompt-codes-slash-commands", "title": "Arjav Jain — 23 ChatGPT Image Prompt Codes", "note": {"id": "Referensi penggunaan nama /birdseye dan /blueprint untuk sudut kamera dan gaya ilustrasi.", "en": "Reference for /birdseye and /blueprint as camera-angle and illustration-style prompt names."}},
+    {"url": "https://arjavjain.org/posts/chatgpt-image-prompt-codes-slash-commands", "title": "Arjav Jain — 23 ChatGPT Image Prompt Codes", "note": {"id": "Referensi penggunaan nama /birdseye, /blueprint, dan /lowpoly untuk sudut kamera dan gaya ilustrasi.", "en": "Reference for /birdseye, /blueprint, and /lowpoly as camera-angle and illustration-style prompt names."}},
     {"url": "https://www.wishyani.com/commands/metaads", "title": "Wishyani — /metaads", "note": {"id": "Referensi penggunaan nama kode untuk visual iklan produk.", "en": "Reference for the code name used for product ad imagery."}},
     {"url": "https://www.wishyani.com/commands/3dbillboard", "title": "Wishyani — /3dbillboard", "note": {"id": "Referensi nama kode untuk konsep billboard anamorfik.", "en": "Reference for the anamorphic billboard concept code."}},
     {"url": "https://www.wishyani.com/commands/showcase", "title": "Wishyani — /showcase", "note": {"id": "Referensi nama kode untuk foto produk studio.", "en": "Reference for the studio product photography code."}},
@@ -23,6 +23,73 @@
     {"id": "illustration", "label": {"id": "Ilustrasi", "en": "Illustration"}}
   ],
   "entries": [
+    {
+      "id": "lowpoly",
+      "name": "/lowpoly",
+      "type": "community-shorthand",
+      "platform": "chatgpt-images",
+      "category": "illustration",
+      "access": {
+        "kind": "shorthand",
+        "label": {
+          "id": "Shorthand komunitas untuk bentuk 3D berbidang poligon. Gunakan prompt lengkap untuk menentukan geometri dan pencahayaan.",
+          "en": "Community shorthand for faceted 3D forms. Use the full prompt to specify geometry and lighting."
+        }
+      },
+      "keywords": {
+        "id": "low poly lowpoly poligon geometri bidang bersudut render 3d stilisasi cangkir",
+        "en": "low poly lowpoly polygon geometry faceted angular flat shaded stylized 3d render mug"
+      },
+      "example": {
+        "image": "/assets/examples/lowpoly.png",
+        "alt": {
+          "id": "Cangkir biru dengan badan dan gagang bersudut serta bidang poligon pada latar krem.",
+          "en": "A blue mug with an angular body and handle and flat polygonal faces against a cream background."
+        },
+        "note": {
+          "id": "Ilustrasi AI dibuat dengan Imagegen dari deskripsi cangkir fiktif tanpa foto masukan. Gambar raster ini bukan model 3D yang bisa diedit.",
+          "en": "AI illustration created with Imagegen from a fictional mug description without input photos. This raster image is not an editable 3D model."
+        }
+      },
+      "content": {
+        "id": {
+          "summary": "Mengubah bentuk objek menjadi render 3D bergaya poligon dengan bidang datar dan tepi yang terlihat jelas.",
+          "input": "Deskripsi objek; foto acuan opsional. Contoh tanpa foto memakai cangkir biru kobalt tanpa merek, berbadan silinder dan bergagang D, yang ditafsirkan sebagai bentuk bersudut.",
+          "steps": [
+            "Pilih objek dengan siluet yang mudah dikenali; lampirkan foto acuan bila tersedia.",
+            "Salin prompt lengkap dan sesuaikan warna, jumlah bidang, serta sudut pandang.",
+            "Buat gambar lalu periksa bidang datar, bentuk gagang, dan siluetnya. Gunakan aplikasi pemodelan terpisah bila membutuhkan berkas 3D."
+          ],
+          "prompt": "Buat satu gambar persegi berupa render 3D bergaya low-poly. Gunakan siluet dan warna produk dari foto terlampir bila ada; tanpa foto, gunakan cangkir biru kobalt tanpa merek dengan badan silinder dan gagang D di kanan. Tafsirkan badan sebagai silinder bersegi sekitar dua belas sisi, dengan bibir bersudut dan gagang yang tersusun dari beberapa segmen datar. Tampilkan seluruh cangkir dan gagang dari sudut tiga perempat, di tengah permukaan serta latar krem hangat. Cangkir kosong dan rongga bagian dalam berwarna biru gelap terlihat. Gunakan bidang poligon yang terlihat jelas, gradasi warna diskret antarsisi, dan siluet geometris tegas. Hindari permukaan membulat mulus dan tekstur keramik fotorealistis. Gunakan cahaya studio lembut dari kiri atas serta bayangan kontak pendek. Sisakan ruang di tepi. Jangan tambahkan teks, logo, watermark, kisi, bingkai, kolase, properti, atau objek tambahan.",
+          "result": "Cangkir biru tampil sebagai bentuk geometris bersudut dengan perbedaan rona pada tiap bidang. Contoh memperlihatkan gaya low-poly dalam gambar raster; tidak menghasilkan mesh, geometri terukur, atau berkas model 3D."
+        },
+        "en": {
+          "summary": "Reinterpret an object as a low-poly 3D-style render with flat faces and clearly visible edges.",
+          "input": "Describe the object; a reference photo is optional. Without one, the example uses an unbranded cobalt-blue cylindrical mug with a D-shaped handle, reinterpreted as angular geometry.",
+          "steps": [
+            "Choose an object with a recognizable silhouette; attach a reference photo if available.",
+            "Copy the full prompt and adjust the color, facet count, and viewpoint.",
+            "Create the image and inspect the flat faces, handle shape, and silhouette. Use separate modeling software if you need a 3D file."
+          ],
+          "prompt": "Create one square low-poly 3D-style render. If a product photo is attached, use its silhouette and colors as reference; otherwise use an unbranded cobalt-blue cylindrical mug with a D-shaped handle on the right. Reinterpret the body as a roughly twelve-sided polygonal cylinder with an angular rim and a handle built from a few flat segments. Show the entire mug and handle in a three-quarter view, centered on a warm cream surface and background. The mug is empty with its dark blue inner cavity visible. Use clearly visible polygonal faces, discrete changes in shade between adjacent faces, and a crisp geometric silhouette. Avoid smooth rounded surfaces and photorealistic ceramic texture. Use soft studio light from the upper left and a short contact shadow. Leave comfortable margins. Do not add text, logos, watermarks, grids, borders, collages, props, or extra objects.",
+          "result": "The blue mug appears as an angular geometric form with different shades across its faces. The example demonstrates a low-poly look in a raster image; it does not produce a mesh, measured geometry, or a 3D model file."
+        }
+      },
+      "verification": {
+        "method": "community",
+        "checkedAt": "2026-11-17",
+        "sources": [
+          {
+            "title": "Arjav Jain — 23 ChatGPT Image Prompt Codes",
+            "url": "https://arjavjain.org/posts/chatgpt-image-prompt-codes-slash-commands"
+          }
+        ],
+        "note": {
+          "id": "Referensi komunitas memakai /lowpoly untuk geometri sederhana dengan bidang poligon terlihat. Prompt ini ditulis sendiri, bukan salinan atau terjemahan verbatim sumber. Kode bukan command resmi ChatGPT.",
+          "en": "The community reference uses /lowpoly for simplified geometry with visible polygonal faces. This prompt is independently written, not a copy or verbatim translation of the source. The code is not an official ChatGPT command."
+        }
+      }
+    },
     {
       "id": "birdseye",
       "name": "/birdseye",

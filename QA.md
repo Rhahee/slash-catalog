@@ -1,5 +1,14 @@
 # QA — image prompt catalog
 
+## Scheduled update — 17 November 2026
+
+- Reviewed https://arjavjain.org/posts/chatgpt-image-prompt-codes-slash-commands and added /lowpoly for simplified faceted geometry. This is distinct from the existing studio-photo, diorama, storybook, and blueprint directions. Selected one complete addition for this run; other source-list candidates remain for later review.
+- Catalog now contains nine entries. Added original Indonesian/English prompts, metadata, source attribution, and checkedAt 2026-11-17. All eight prior entry objects remain unchanged. The example is explicitly a raster illustration, not an editable 3D model.
+- Generated assets/examples/lowpoly.png with built-in image_gen and no input photos. Inspected the result: angular cobalt-blue mug and handle, flat polygonal faces, empty cavity, cream background, no unwanted text or logos. Actual generation prompt and source/output paths are in artifacts/image-generation-prompts.json. Copied PNG bytes match the original.
+- npm test: 9 passed. Server syntax and git diff --check passed. Bilingual searches with the Illustration category passed. All 11 page/data/image routes at http://127.0.0.1:4178/ returned HTTP 200, with correct PNG content types.
+- In-app browser verification succeeded: /lowpoly deep link opens, Indonesian/English switching works, example PNG decodes at 1254 x 1254, and desktop screenshot shows readable detail layout with vertical scrolling. Browser tooling emitted initialization warnings, but page interactions and image decoding succeeded. Mobile layout and clipboard were not retested.
+- Updated the explicit asset allowlist and README. Separate preview uses port 4178 without interrupting existing servers. Changes remain local; no commit, push, or deploy during this scheduled run.
+
 ## Scheduled update — 13 November 2026
 
 - Reviewed Arjav Jain's author-published list at https://arjavjain.org/posts/chatgpt-image-prompt-codes-slash-commands. Added /birdseye (overhead tabletop composition) and /blueprint (white-line technical-style illustration); these concepts are distinct from the six existing entries. This run selected two additions, not an exhaustive import of the source list. The six prior entry objects are unchanged.

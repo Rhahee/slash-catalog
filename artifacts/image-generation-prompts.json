@@ -4,6 +4,13 @@
   "note": "Independently generated examples of a fictional unbranded blue mug. These are illustrations of full prompt concepts, not evidence that shorthand codes alone invoke built-in ChatGPT commands.",
   "prompts": [
     {
+      "id": "lowpoly",
+      "generatedAt": "2026-11-17",
+      "sourceFile": "C:/Users/rahen/.codex/generated_images/01a1c7c1-f42e-7403-aafd-0349039870ba/exec-beea4937-2a24-4c7e-8378-106f50049fa8.png",
+      "outputFile": "assets/examples/lowpoly.png",
+      "prompt": "Create one square stylized low-poly 3D render for a community image-prompt catalog. The only subject is a fictional unbranded cobalt-blue mug with a cylindrical body and a simple D-shaped handle on the right. Reinterpret its round body as a clearly faceted polygonal cylinder with about twelve flat sides, a visibly angular rim and a handle made of a few angular planar segments. Keep the entire mug and handle visible at a three-quarter view, centered on a warm cream ground plane against a seamless warm cream background. Empty mug, clearly visible dark blue inner cavity, no coffee. Use hard flat-shaded triangular or polygonal faces, subtly varied cobalt shades on adjacent faces, crisp geometric silhouette, no smooth curved surfaces, no photoreal ceramic texture. Soft large studio light upper left and a short soft contact shadow. Make the mug occupy about two thirds of the square with comfortable margins. No text, logos, watermark, grid, border, collage, props, miniature people, or extra objects. This is an independently generated fictional illustration of a full prompt, not proof that a slash code invokes a native command. Generate from this description alone without reference images."
+    },
+    {
       "id": "birdseye",
       "generatedAt": "2026-11-13",
       "sourceFile": "C:/Users/rahen/.codex/generated_images/01a1c7c1-f42e-7403-aafd-0349039870ba/exec-1530af8d-1c9f-49ed-9bb3-590598fb189f.png",
