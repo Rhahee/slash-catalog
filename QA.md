@@ -1,5 +1,14 @@
 # QA — image prompt catalog
 
+## Scheduled update — 19 November 2026
+
+- Reviewed https://arjavjain.org/posts/chatgpt-image-prompt-codes-slash-commands and added /stainedglass for a translucent colored-glass panel look with dark lead lines. Selected one complete addition, distinct from the existing photographic and illustration directions. The nine existing entry objects are unchanged.
+- Catalog now has ten entries with original Indonesian/English prompts, example metadata, attribution, and checkedAt 2026-11-19. The example is explicitly a fictional raster illustration, not real glasswork or a fabrication pattern.
+- Generated assets/examples/stainedglass.png with built-in image_gen without input images. Visually inspected the returned image: clear blue mug silhouette and handle opening, dark glass divisions, cream/amber/teal background, luminous glass texture, no unwanted text or logo. Prompt and source/output paths are recorded in artifacts/image-generation-prompts.json; source/output PNG bytes match.
+- npm test: 9 passed. Server syntax and git diff --check passed. Indonesian/English searches with the Illustration category passed. All 12 page/data/image routes at http://127.0.0.1:4179/ returned HTTP 200 with correct PNG content types.
+- Browser preview timed out before inspection. Browser rendering, mobile layout, and clipboard were not verified in this run. Separate HTTP preview uses port 4179 without stopping earlier servers.
+- Changed only catalog data, asset, provenance, the existing server allowlist, README, and this QA log. No new application logic or dependencies; no commit, push, or deploy.
+
 ## Scheduled update — 17 November 2026
 
 - Reviewed https://arjavjain.org/posts/chatgpt-image-prompt-codes-slash-commands and added /lowpoly for simplified faceted geometry. This is distinct from the existing studio-photo, diorama, storybook, and blueprint directions. Selected one complete addition for this run; other source-list candidates remain for later review.

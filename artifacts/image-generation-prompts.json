@@ -4,6 +4,13 @@
   "note": "Independently generated examples of a fictional unbranded blue mug. These are illustrations of full prompt concepts, not evidence that shorthand codes alone invoke built-in ChatGPT commands.",
   "prompts": [
     {
+      "id": "stainedglass",
+      "generatedAt": "2026-11-19",
+      "sourceFile": "C:/Users/rahen/.codex/generated_images/01a1c7c1-f42e-7403-aafd-0349039870ba/exec-5a5ca847-ff44-4da9-a3f3-4781ea1cfbc3.png",
+      "outputFile": "assets/examples/stainedglass.png",
+      "prompt": "Create one square original stained-glass artwork illustration for a community image-prompt catalog. Subject: a single clearly recognizable cobalt-blue mug with a cylindrical body and a D-shaped handle pointing right, seen in a simple three-quarter view, centered and fully visible with generous margins. Translate the mug into translucent cobalt and sapphire glass segments separated by strong dark lead lines; its open top is a dark blue oval. Surround it with a restrained abstract field of warm cream and pale amber glass segments, with a few muted teal accents. Luminous backlighting shines through uneven glass texture with small bubbles and subtle ripples. The overall medium is a flat assembled stained-glass panel, not a photorealistic ceramic mug, a 3D polygon mesh or a craft diorama. Keep the handle visibly open and the silhouette easy to read. No words, letters, numbers, logo, watermark, exterior frame, captions, collage, extra objects or human figures. This is a fictional independently generated raster illustration, not a photo of a real installed panel or a fabrication template. Generate from this description without input images."
+    },
+    {
       "id": "lowpoly",
       "generatedAt": "2026-11-17",
       "sourceFile": "C:/Users/rahen/.codex/generated_images/01a1c7c1-f42e-7403-aafd-0349039870ba/exec-beea4937-2a24-4c7e-8378-106f50049fa8.png",

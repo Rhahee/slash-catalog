@@ -1,14 +1,14 @@
 {
   "version": 2,
   "scope": "image-prompts",
-  "reviewedAt": "2026-11-17",
+  "reviewedAt": "2026-11-19",
   "status": "ready",
   "researchNote": {
     "id": "Katalog ini memuat shorthand prompt khusus pembuatan gambar. Nama kode ditemukan pada referensi komunitas Wishyani dan Arjav Jain, bukan daftar command resmi OpenAI. Prompt lengkap ditulis untuk katalog ini. Contoh visual dibuat dengan Imagegen dari deskripsi cangkir biru fiktif tanpa foto masukan; contoh tersebut tidak membuktikan bahwa kode pendek saja menghasilkan gambar tertentu.",
     "en": "This catalog contains image-generation prompt shorthands. Their code names were found in the Wishyani and Arjav Jain community references, not an official OpenAI command list. Full prompts were written for this catalog. Visual examples were created with Imagegen from descriptions of a fictional blue mug, without input photos; they do not establish that short codes alone produce a particular image."
   },
   "sources": [
-    {"url": "https://arjavjain.org/posts/chatgpt-image-prompt-codes-slash-commands", "title": "Arjav Jain — 23 ChatGPT Image Prompt Codes", "note": {"id": "Referensi penggunaan nama /birdseye, /blueprint, dan /lowpoly untuk sudut kamera dan gaya ilustrasi.", "en": "Reference for /birdseye, /blueprint, and /lowpoly as camera-angle and illustration-style prompt names."}},
+    {"url": "https://arjavjain.org/posts/chatgpt-image-prompt-codes-slash-commands", "title": "Arjav Jain — 23 ChatGPT Image Prompt Codes", "note": {"id": "Referensi penggunaan nama /birdseye, /blueprint, /lowpoly, dan /stainedglass untuk sudut kamera dan gaya ilustrasi.", "en": "Reference for /birdseye, /blueprint, /lowpoly, and /stainedglass as camera-angle and illustration-style prompt names."}},
     {"url": "https://www.wishyani.com/commands/metaads", "title": "Wishyani — /metaads", "note": {"id": "Referensi penggunaan nama kode untuk visual iklan produk.", "en": "Reference for the code name used for product ad imagery."}},
     {"url": "https://www.wishyani.com/commands/3dbillboard", "title": "Wishyani — /3dbillboard", "note": {"id": "Referensi nama kode untuk konsep billboard anamorfik.", "en": "Reference for the anamorphic billboard concept code."}},
     {"url": "https://www.wishyani.com/commands/showcase", "title": "Wishyani — /showcase", "note": {"id": "Referensi nama kode untuk foto produk studio.", "en": "Reference for the studio product photography code."}},
@@ -23,6 +23,73 @@
     {"id": "illustration", "label": {"id": "Ilustrasi", "en": "Illustration"}}
   ],
   "entries": [
+    {
+      "id": "stainedglass",
+      "name": "/stainedglass",
+      "type": "community-shorthand",
+      "platform": "chatgpt-images",
+      "category": "illustration",
+      "access": {
+        "kind": "shorthand",
+        "label": {
+          "id": "Shorthand komunitas untuk ilustrasi kaca patri. Gunakan prompt lengkap untuk menentukan objek, pembagian kaca, dan cahaya.",
+          "en": "Community shorthand for stained-glass illustrations. Use the full prompt to define the subject, glass segments, and light."
+        }
+      },
+      "keywords": {
+        "id": "kaca patri stained glass panel kaca transparan cahaya garis timah mosaik cangkir",
+        "en": "stained glass stainedglass translucent panel backlit lead lines glass texture mug"
+      },
+      "example": {
+        "image": "/assets/examples/stainedglass.png",
+        "alt": {
+          "id": "Cangkir biru dibentuk dari segmen kaca patri bergaris gelap, dikelilingi kaca krem, amber, dan teal dengan cahaya dari belakang.",
+          "en": "A blue mug formed from stained-glass segments with dark lead lines, surrounded by cream, amber, and teal glass lit from behind."
+        },
+        "note": {
+          "id": "Ilustrasi AI orisinal dibuat dengan Imagegen tanpa foto masukan. Ini gambar raster panel fiktif, bukan foto karya kaca atau pola potong untuk produksi.",
+          "en": "Original AI illustration created with Imagegen without input photos. This is a raster image of a fictional panel, not a photo of glasswork or a fabrication cutting pattern."
+        }
+      },
+      "content": {
+        "id": {
+          "summary": "Menafsirkan objek sebagai susunan kaca berwarna tembus cahaya dengan garis pemisah gelap dan cahaya dari belakang.",
+          "input": "Deskripsi objek; foto acuan opsional. Tanpa foto, contoh memakai cangkir biru kobalt tanpa merek, berbadan silinder dan bergagang D.",
+          "steps": [
+            "Tentukan objek dengan siluet sederhana; lampirkan foto acuan bila ada.",
+            "Salin prompt lengkap dan sesuaikan palet kaca serta latar abstraknya.",
+            "Buat gambar lalu periksa keterbacaan siluet, celah gagang, dan pemisah kaca. Gunakan perancangan terpisah bila membutuhkan pola produksi."
+          ],
+          "prompt": "Buat satu ilustrasi persegi bergaya panel kaca patri. Bila ada foto acuan, gunakan siluet objek utamanya sebagai inspirasi; tanpa foto, gambarkan cangkir biru kobalt tanpa merek, berbadan silinder dan bergagang D mengarah ke kanan, dari sudut tiga perempat sederhana. Seluruh cangkir dan gagang terlihat dengan ruang tepi yang lega. Bentuk cangkir dari potongan kaca biru kobalt dan safir yang tembus cahaya, dipisahkan garis timah gelap yang tegas. Bukaan cangkir berupa oval biru gelap dan celah gagang tetap terbaca. Isi latar dengan bidang kaca abstrak krem serta amber pucat dan sedikit aksen teal. Gunakan cahaya dari belakang, tekstur kaca bergelombang halus, dan gelembung kecil. Keseluruhan gambar menyerupai panel datar yang dirakit dari kaca. Jangan tambahkan teks, angka, logo, watermark, bingkai luar, kolase, objek tambahan, atau tokoh manusia. Hasil berupa ilustrasi panel fiktif, bukan pola potong untuk produksi.",
+          "result": "Cangkir tampak sebagai susunan segmen kaca biru dengan garis gelap, dikelilingi bidang kaca hangat yang bercahaya. Contoh menunjukkan tekstur dan pembagian bidang kaca; bukan dokumentasi panel nyata atau rancangan konstruksi yang tervalidasi."
+        },
+        "en": {
+          "summary": "Reinterpret an object as translucent colored-glass segments with dark dividing lines and light from behind.",
+          "input": "Describe the subject; a reference photo is optional. Without one, the example uses an unbranded cobalt-blue cylindrical mug with a D-shaped handle.",
+          "steps": [
+            "Choose a subject with a simple silhouette; attach a reference photo if available.",
+            "Copy the full prompt and adapt the glass palette and abstract background.",
+            "Create the image and inspect the silhouette, handle opening, and glass divisions. Use a separate design process if you need fabrication patterns."
+          ],
+          "prompt": "Create one square stained-glass-panel illustration. If a reference photo is attached, use its main object's silhouette as inspiration; otherwise show an unbranded cobalt-blue cylindrical mug with a D-shaped handle pointing right, in a simple three-quarter view. Keep the entire mug and handle visible with generous margins. Build the mug from translucent cobalt and sapphire glass pieces separated by strong dark lead lines. Its opening is a dark blue oval and the handle opening stays readable. Fill the background with abstract cream and pale amber glass segments and a few muted teal accents. Use luminous backlighting, subtle rippled glass texture, and small bubbles. The overall image should resemble a flat assembled glass panel. Do not add text, numbers, logos, watermarks, an exterior frame, collages, extra objects, or people. The result is an illustration of a fictional panel, not a fabrication cutting pattern.",
+          "result": "The mug appears as blue glass segments with dark divisions, surrounded by glowing warm glass shapes. The example shows glass texture and segmentation; it is not documentation of a real panel or a validated construction design."
+        }
+      },
+      "verification": {
+        "method": "community",
+        "checkedAt": "2026-11-19",
+        "sources": [
+          {
+            "title": "Arjav Jain — 23 ChatGPT Image Prompt Codes",
+            "url": "https://arjavjain.org/posts/chatgpt-image-prompt-codes-slash-commands"
+          }
+        ],
+        "note": {
+          "id": "Referensi komunitas memakai /stainedglass untuk gaya kaca berwarna dengan garis pemisah gelap. Prompt katalog ditulis sendiri, bukan salinan atau terjemahan verbatim sumber. Kode bukan command resmi ChatGPT.",
+          "en": "The community reference uses /stainedglass for colored-glass imagery with dark dividing lines. The catalog prompt is independently written, not a copy or verbatim translation of the source. The code is not an official ChatGPT command."
+        }
+      }
+    },
     {
       "id": "lowpoly",
       "name": "/lowpoly",
