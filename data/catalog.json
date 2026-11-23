@@ -1,14 +1,14 @@
 {
   "version": 2,
   "scope": "image-prompts",
-  "reviewedAt": "2026-11-19",
+  "reviewedAt": "2026-11-23",
   "status": "ready",
   "researchNote": {
     "id": "Katalog ini memuat shorthand prompt khusus pembuatan gambar. Nama kode ditemukan pada referensi komunitas Wishyani dan Arjav Jain, bukan daftar command resmi OpenAI. Prompt lengkap ditulis untuk katalog ini. Contoh visual dibuat dengan Imagegen dari deskripsi cangkir biru fiktif tanpa foto masukan; contoh tersebut tidak membuktikan bahwa kode pendek saja menghasilkan gambar tertentu.",
     "en": "This catalog contains image-generation prompt shorthands. Their code names were found in the Wishyani and Arjav Jain community references, not an official OpenAI command list. Full prompts were written for this catalog. Visual examples were created with Imagegen from descriptions of a fictional blue mug, without input photos; they do not establish that short codes alone produce a particular image."
   },
   "sources": [
-    {"url": "https://arjavjain.org/posts/chatgpt-image-prompt-codes-slash-commands", "title": "Arjav Jain — 23 ChatGPT Image Prompt Codes", "note": {"id": "Referensi penggunaan nama /birdseye, /blueprint, /lowpoly, dan /stainedglass untuk sudut kamera dan gaya ilustrasi.", "en": "Reference for /birdseye, /blueprint, /lowpoly, and /stainedglass as camera-angle and illustration-style prompt names."}},
+    {"url": "https://arjavjain.org/posts/chatgpt-image-prompt-codes-slash-commands", "title": "Arjav Jain — 23 ChatGPT Image Prompt Codes", "note": {"id": "Referensi penggunaan nama /birdseye, /blueprint, /lowpoly, /stainedglass, dan /macro untuk sudut kamera, gaya ilustrasi, serta foto detail.", "en": "Reference for /birdseye, /blueprint, /lowpoly, /stainedglass, and /macro as camera-angle, illustration-style, and detail-photography prompt names."}},
     {"url": "https://www.wishyani.com/commands/metaads", "title": "Wishyani — /metaads", "note": {"id": "Referensi penggunaan nama kode untuk visual iklan produk.", "en": "Reference for the code name used for product ad imagery."}},
     {"url": "https://www.wishyani.com/commands/3dbillboard", "title": "Wishyani — /3dbillboard", "note": {"id": "Referensi nama kode untuk konsep billboard anamorfik.", "en": "Reference for the anamorphic billboard concept code."}},
     {"url": "https://www.wishyani.com/commands/showcase", "title": "Wishyani — /showcase", "note": {"id": "Referensi nama kode untuk foto produk studio.", "en": "Reference for the studio product photography code."}},
@@ -23,6 +23,73 @@
     {"id": "illustration", "label": {"id": "Ilustrasi", "en": "Illustration"}}
   ],
   "entries": [
+    {
+      "id": "macro",
+      "name": "/macro",
+      "type": "community-shorthand",
+      "platform": "chatgpt-images",
+      "category": "product-photo",
+      "access": {
+        "kind": "shorthand",
+        "label": {
+          "id": "Shorthand komunitas untuk foto jarak sangat dekat. Gunakan prompt lengkap agar detail yang menjadi fokus jelas.",
+          "en": "Community shorthand for extreme close-up photography. Use the full prompt to identify the detail in focus."
+        }
+      },
+      "keywords": {
+        "id": "makro macro jarak dekat tekstur detail keramik bibir cangkir gagang kedalaman bidang",
+        "en": "macro extreme close up texture detail ceramic mug rim handle shallow depth of field"
+      },
+      "example": {
+        "image": "/assets/examples/macro.png",
+        "alt": {
+          "id": "Detail dekat bibir cangkir biru dan pangkal gagangnya, dengan tekstur keramik tajam serta latar krem yang kabur.",
+          "en": "A close detail of a blue mug rim and handle attachment, with sharp ceramic texture and a blurred cream background."
+        },
+        "note": {
+          "id": "Foto sintetis dibuat dengan Imagegen tanpa foto masukan. Tekstur produk fiktif ini bukan bukti inspeksi atau kondisi material produk nyata.",
+          "en": "Synthetic photo created with Imagegen without input photos. This fictional product texture is not evidence of an inspection or a real product's material condition."
+        }
+      },
+      "content": {
+        "id": {
+          "summary": "Foto sangat dekat yang menekankan tekstur permukaan dan detail kecil objek dengan latar kabur.",
+          "input": "Deskripsi objek dan bagian yang ingin disorot; foto produk opsional. Tanpa foto, gunakan bibir serta pangkal gagang cangkir keramik biru kobalt matte tanpa merek.",
+          "steps": [
+            "Pilih satu detail kecil sebagai fokus, misalnya bibir cangkir atau tekstur glasir; lampirkan foto acuan bila ada.",
+            "Salin prompt lengkap dan sesuaikan titik fokus, cahaya, serta tingkat pembesaran.",
+            "Buat gambar lalu periksa bentuk dan teksturnya. Jangan menganggap detail sintetis sebagai hasil inspeksi produk nyata."
+          ],
+          "prompt": "Buat satu foto makro persegi yang realistis. Bila ada foto produk terlampir, jadikan bentuk serta warnanya sebagai acuan; tanpa foto, gunakan cangkir keramik biru kobalt matte tanpa merek, berbadan silinder dan bergagang D. Bingkai sangat dekat pada bibir kanan atas cangkir dan sambungan atas gagangnya, sehingga sebagian besar cangkir sengaja berada di luar bingkai. Tampilkan butiran halus glasir keramik dan sorotan lembut di tepi bibir. Fokus tajam pada bibir depan dan sambungan gagang; rongga cangkir di belakangnya serta latar studio krem hangat tampak kabur dengan kedalaman bidang sangat dangkal. Gunakan cahaya samping lembut dari kiri atas, proporsi masuk akal, dan variasi glasir kecil yang natural. Jangan tambahkan retakan berlebihan, cairan, tetesan, teks, logo, watermark, bingkai, kolase, penggaris, label, orang, atau objek lain. Ini ilustrasi sintetis produk fiktif, bukan dokumentasi inspeksi.",
+          "result": "Tekstur keramik pada bibir serta sambungan gagang menjadi pusat perhatian, sementara bentuk cangkir lainnya terpotong dan latar kabur. Contoh menjelaskan arah foto detail; pola glasir tidak membuktikan tekstur atau cacat pada barang sungguhan."
+        },
+        "en": {
+          "summary": "An extreme close-up that emphasizes surface texture and small object details against a blurred background.",
+          "input": "Describe the object and the detail to highlight; a product photo is optional. Without one, use the rim and handle attachment of an unbranded matte cobalt-blue ceramic mug.",
+          "steps": [
+            "Choose one small detail to focus on, such as the mug rim or glaze texture; attach a reference photo if available.",
+            "Copy the full prompt and adapt the focal point, lighting, and magnification.",
+            "Create the image and inspect its shape and texture. Do not treat synthetic details as a real product inspection."
+          ],
+          "prompt": "Create one realistic square macro photograph. If a product photo is attached, use its shape and colors as reference; otherwise use an unbranded matte cobalt-blue ceramic mug with a cylindrical body and D-shaped handle. Frame an extreme close-up of the upper right rim and upper handle attachment, deliberately cropping most of the mug outside the frame. Show fine granular ceramic glaze and a soft highlight along the rim. Focus sharply on the front rim and handle joint; let the inner cavity behind them and a warm cream studio background fall out of focus with very shallow depth of field. Use soft side light from the upper left, plausible proportions, and small natural glaze variations. Do not add exaggerated cracks, liquid, droplets, text, logos, watermarks, borders, collages, rulers, labels, people, or other objects. This is a synthetic illustration of a fictional product, not inspection documentation.",
+          "result": "The ceramic texture at the rim and handle joint is the focal point, while the rest of the mug is cropped and the background blurred. The example illustrates a detail-photography direction; the glaze pattern does not establish the texture or defects of a real item."
+        }
+      },
+      "verification": {
+        "method": "community",
+        "checkedAt": "2026-11-23",
+        "sources": [
+          {
+            "title": "Arjav Jain — 23 ChatGPT Image Prompt Codes",
+            "url": "https://arjavjain.org/posts/chatgpt-image-prompt-codes-slash-commands"
+          }
+        ],
+        "note": {
+          "id": "Referensi komunitas memakai /macro untuk menonjolkan detail kecil dan tekstur melalui foto jarak dekat. Prompt ini ditulis sendiri, bukan salinan atau terjemahan verbatim sumber. Kode bukan command resmi ChatGPT.",
+          "en": "The community reference uses /macro to emphasize fine detail and texture through extreme close-up photography. This prompt is independently written, not a copy or verbatim translation of the source. The code is not an official ChatGPT command."
+        }
+      }
+    },
     {
       "id": "stainedglass",
       "name": "/stainedglass",

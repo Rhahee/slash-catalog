@@ -4,6 +4,13 @@
   "note": "Independently generated examples of a fictional unbranded blue mug. These are illustrations of full prompt concepts, not evidence that shorthand codes alone invoke built-in ChatGPT commands.",
   "prompts": [
     {
+      "id": "macro",
+      "generatedAt": "2026-11-23",
+      "sourceFile": "C:/Users/rahen/.codex/generated_images/01a1c7c1-f42e-7403-aafd-0349039870ba/exec-96c7e0c9-8ec9-4b75-bf0c-f8163bc51e79.png",
+      "outputFile": "assets/examples/macro.png",
+      "prompt": "Create one square photorealistic macro photograph for a community image-prompt catalog. The subject is an independently imagined unbranded matte cobalt-blue ceramic mug with a cylindrical body and D-shaped handle. Frame an extreme close-up of the upper right rim and the upper attachment of the handle, showing the tactile fine granular ceramic glaze and a thin soft highlight along the rounded rim. Crop most of the mug outside the frame deliberately; do not try to show the whole product. The visible dark inner cavity is softly out of focus behind the sharply detailed front rim and handle joint. Use a very shallow depth of field with a restrained warm cream studio background dissolving into blur. Soft diffused side light from the upper left, plausible proportions and material, natural small glaze variations without exaggerated cracks, no liquid or droplets. No text, logo, watermark, border, collage, ruler, labels, additional objects or people. This is a synthetic close-up illustration of a fictional mug, not microscope evidence or a real product inspection. Generate from this description alone, without any input images."
+    },
+    {
       "id": "stainedglass",
       "generatedAt": "2026-11-19",
       "sourceFile": "C:/Users/rahen/.codex/generated_images/01a1c7c1-f42e-7403-aafd-0349039870ba/exec-5a5ca847-ff44-4da9-a3f3-4781ea1cfbc3.png",

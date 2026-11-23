@@ -1,5 +1,14 @@
 # QA — image prompt catalog
 
+## Scheduled update — 23 November 2026
+
+- Reviewed https://arjavjain.org/posts/chatgpt-image-prompt-codes-slash-commands and added /macro for close-up texture and fine detail. This differs from the existing full-product studio and overhead compositions. Selected one complete addition; all ten existing entry objects remain unchanged.
+- Catalog now has eleven entries. Added original Indonesian/English prompts, localized example/input/steps/result metadata, community attribution, and checkedAt 2026-11-23. Synthetic glaze detail is explicitly not real inspection evidence.
+- Generated assets/examples/macro.png with built-in image_gen without input photos. Inspected the returned image: cropped cobalt mug rim and handle joint, visible ceramic grain, shallow focus, blurred cream background, no unwanted text or logo. Actual prompt and source/output paths are in artifacts/image-generation-prompts.json; copied PNG bytes match.
+- npm test: 9 passed. Server syntax and git diff --check passed. New bilingual searches with the Product photography category passed. All 13 page/data/image routes at http://127.0.0.1:4180/ returned HTTP 200 with correct PNG content types.
+- Browser rendering was not checked: in-app browser unavailable and browser inventory empty. Mobile layout and clipboard were not retested. Separate HTTP preview uses port 4180 without stopping earlier servers.
+- Updated only data, image, provenance, existing asset allowlist, README, and QA. No new app logic, dependencies, commit, push, or deploy.
+
 ## Scheduled update — 19 November 2026
 
 - Reviewed https://arjavjain.org/posts/chatgpt-image-prompt-codes-slash-commands and added /stainedglass for a translucent colored-glass panel look with dark lead lines. Selected one complete addition, distinct from the existing photographic and illustration directions. The nine existing entry objects are unchanged.
